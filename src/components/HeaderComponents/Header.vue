@@ -1,22 +1,22 @@
 <template>
-    <v-app-bar
-      class="header-primary secondary--text"
-      app
-      color="primary"
-      dark
-      v-row
-      flat
-      height="95"
-    >
-      
-      <v-flex md4>
+  <v-app-bar
+    class="header-primary secondary--text"
+    app
+    color="primary"
+    dark
+    flat
+    height="95"
+  >
+    <v-container>
+      <v-row>
+      <v-col>
         <button class="menu">
           <i class="v-icon mdi mdi-menu"></i>
           <span class="header-menu ml-2">Menu</span>
         </button>
-      </v-flex>
+      </v-col>
 
-      <v-flex md4>
+      <v-col>
         <a 
           class="" 
           href="/"
@@ -27,34 +27,27 @@
             dense
           />
         </a>
-      </v-flex>
+      </v-col>
 
-      <v-flex md4 class="header-buttons">
-        <div>
-          <!-- <button 
-            href="https://github.com/vuetifyjs/vuetify/releases/latest" 
-            target="_blank"
-          >
-            <span class="mr-2 ">Quero ajudar</span>
-            <v-icon>mdi-open-in-new</v-icon>
-          </button> -->
-          <a 
-            class="quero-ajudar"
-            href="https://github.com/vuetifyjs/vuetify/releases/latest" 
-            target="_blank"
-          >
-          Quero ajudar
-          </a>
-          <a 
-            class="entre-em-contato"
-            href="https://github.com/vuetifyjs/vuetify/releases/latest" 
-            target="_blank"
-          >
-          Entre em contato
-          </a>
-        </div>
-      </v-flex>
-    </v-app-bar>
+        <v-col class="header-buttons mt-3">
+          <div>
+            <a 
+              class="quero-ajudar"
+              href="https://github.com/vuetifyjs/vuetify/releases/latest" 
+              target="_blank"
+            >Quero ajudar
+            </a>
+            <a 
+              class="entre-em-contato"
+              href="https://github.com/vuetifyjs/vuetify/releases/latest" 
+              target="_blank"
+            >Entre em contato
+            </a>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app-bar>
 </template>
 
 <script>
