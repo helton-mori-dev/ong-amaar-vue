@@ -10,10 +10,37 @@
     <v-container>
       <v-row>
       <v-col>
-        <button class="menu">
-          <i class="v-icon mdi mdi-menu"></i>
-          <span class="header-menu ml-2">Menu</span>
-        </button>
+         <v-menu
+            transition="slide-x-transition"
+            bottom
+            right
+            :close-on-content-click="false"
+          >
+            <template v-slot:activator="{ on }">
+              <v-btn
+                class="my-menu"
+                text
+                v-on="on"
+                x-large
+              >
+                <i class="v-icon mdi mdi-menu"></i>
+                <span class="header-menu ml-2">Menu</span>
+              </v-btn>
+            </template>
+
+            <v-list 
+              class="menu-container"
+              flat             
+              >
+              <v-list-item
+                v-for="(item, i) in items"
+                :key="i"
+                
+              >
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
       </v-col>
 
       <v-col>
@@ -29,22 +56,20 @@
         </a>
       </v-col>
 
-        <v-col class="header-buttons mt-3">
-          <div>
-            <a 
-              class="quero-ajudar"
-              href="https://github.com/vuetifyjs/vuetify/releases/latest" 
-              target="_blank"
-            >Quero ajudar
-            </a>
-            <a 
-              class="entre-em-contato"
-              href="https://github.com/vuetifyjs/vuetify/releases/latest" 
-              target="_blank"
-            >Entre em contato
-            </a>
-          </div>
-        </v-col>
+      <v-col class="header-buttons mt-4">
+        <div>
+          <a 
+            class="quero-ajudar"
+            href="about" 
+          >Quero ajudar
+          </a>
+          <a 
+            class="entre-em-contato"
+            href="/" 
+          >Entre em contato
+          </a>
+        </div>
+      </v-col>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -53,6 +78,14 @@
 <script>
 export default {
   name: 'Header',
+  data: () => ({
+      items: [
+        { title: 'Quero ajudar' },
+        { title: 'Sobre a ONG Amaar' },
+        { title: 'Prestação de contas' },
+        { title: 'Entre em contato' },
+      ],
+    }),
 }
 </script>
 
@@ -73,7 +106,8 @@ export default {
 }
 
 .header-buttons > div {
- float: right;
+  float: right;
+
 }
 
 .header-menu {
@@ -82,9 +116,36 @@ export default {
   vertical-align: middle;
 }
 
-.menu i.mdi-menu {
+.my-menu, .header-buttons {
+  height: 100%;
+}
+
+.my-menu {
+  padding-left: 0!important;
+}
+
+.my-menu i.mdi-menu, .my-menu span {
+  color:  #63DED1!important;
+
+}
+
+.my-menu i.mdi-menu {
   font-size: 45px;
   font-weight: 800;
+}
+
+.menu-container {
+  width: 500px;
+  border-radius: 0!important;
+  width: 100%;
+  height: 100%;
+}
+div.v-menu__content {
+  top: 0!important;
+  left: 0!important;
+  border-radius: 0!important;
+  height: 100vh;
+  width: 70vw;
 }
 
 .header-buttons > div a {
