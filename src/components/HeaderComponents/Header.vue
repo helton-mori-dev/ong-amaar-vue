@@ -12,7 +12,7 @@
       <v-col>
          <Menu />
       </v-col>
-      
+
       <v-col>
         <a 
           class="" 
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700;800&display=swap');
 
 * {
   font-family: 'Muli', sans-serif;
