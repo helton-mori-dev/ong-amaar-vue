@@ -3,7 +3,7 @@
         <v-row class="text-center">
             <v-col cols="2">
                 <v-img height="320px" src="../../assets/adote.png"></v-img>
-                <a class="options-link" href="https://www.instagram.com/ongamaar/">Adote um<span>Animalzinho</span></a>
+                <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span>Animalzinho</span></a>
             </v-col>
             <v-col cols="2">
                 <v-img height="320px" src="../../assets/temporario.png"></v-img>
@@ -24,6 +24,17 @@
                 <a class="options-link" href="sejaumvoluntario">Seja um<span>Voluntário</span></a>
             </v-col>
         </v-row>
+        <v-row class="text-center anchor-button">
+            <v-col>
+                <a href="#ancora">
+                    <v-icon large color="secondary">
+                        mdi-arrow-down
+                    </v-icon>
+                </a>
+                    
+            </v-col>
+        </v-row>
+              
     </v-container>
 </template>
 
@@ -60,5 +71,9 @@
 .container-options .options-link span{
     display: block;
     font-weight: 900;
+}
+
+.anchor-button {
+    padding: 80px 0;
 }
 </style>
