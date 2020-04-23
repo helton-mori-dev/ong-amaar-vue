@@ -2,9 +2,9 @@
   <v-container class="container-message">
     <v-row class="text-center" no-gutters>
       <v-col cols="12" class="message">
-          <p>
+          <p class="first-text">
               E você?
-              <span>
+              <span class="second-text">
                   Quer ajudar? ;)
               </span>
           </p>
@@ -25,17 +25,19 @@
     background:  #503683;
     max-width: none;
     display: flex;
+    justify-content: center;
     min-height: 260px;
     padding-top: 150px;
+    
 }
-p {
+.first-text {
     font-size: 122px;
     color: #604298;
     font-weight: 800;
     line-height: 11px;
     letter-spacing: -2px;
 }
-span {
+.second-text {
     font-size: 46px;
     color: #fff;
     display: block;
