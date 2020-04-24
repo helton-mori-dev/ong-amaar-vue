@@ -3,6 +3,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <PageMessage />
     <HomeOptions />
+    <ConhecaOng />
     <HelloWorld msg="Welcome"/>
   </div>
 </template>
@@ -12,13 +13,16 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import PageMessage from '@/components/ContentComponents/PageMessage.vue'
 import HomeOptions from '@/components/ContentComponents/HomeOptions.vue'
+import ConhecaOng from '@/components/ContentComponents/ConhecaOng.vue'
+
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
     PageMessage,
-    HomeOptions
+    HomeOptions,
+    ConhecaOng
   }
 }
 </script>
