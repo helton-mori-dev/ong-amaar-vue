@@ -4,6 +4,7 @@
     <PageMessage />
     <HomeOptions />
     <ConhecaOng />
+    <OngQuote />
   </div>
 </template>
 
@@ -12,14 +13,15 @@
 import PageMessage from '@/components/ContentComponents/PageMessage.vue'
 import HomeOptions from '@/components/ContentComponents/HomeOptions.vue'
 import ConhecaOng from '@/components/ContentComponents/ConhecaOng.vue'
-
+import OngQuote from '@/components/ContentComponents/OngQuote.vue'
 
 export default {
   name: 'Home',
   components: {
     PageMessage,
     HomeOptions,
-    ConhecaOng
+    ConhecaOng,
+    OngQuote
   }
 }
 </script>
