@@ -1,24 +1,26 @@
 <template>
   <v-app>
     <Header/>
-
-    <v-content>
-      <!-- <HelloWorld/> -->
-      <router-view></router-view>
-    </v-content>
+      <v-content>
+        <!-- <HelloWorld/> -->
+        <router-view></router-view>
+      </v-content>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld';
 import Header from './components/HeaderComponents/Header';
+import Footer from './components/FooterComponents/Footer';
 
 export default {
   name: 'App',
 
   components: {
     // HelloWorld,
-    Header
+    Header,
+    Footer
   },
 
   data: () => ({
