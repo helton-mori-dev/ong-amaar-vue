@@ -13,7 +13,8 @@ export default new Vuetify({
             success: '#4CAF50',
             info: '#2196F3',
             warning: '#FB8C00',
-            error: '#FF5252'
+            error: '#FF5252',
+            lightbackground: '#eee9f3'
           },
           light: {
             primary: '#503683',
@@ -22,7 +23,8 @@ export default new Vuetify({
             success: '#4CAF50',
             info: '#2196F3',
             warning: '#FB8C00',
-            error: '#FF5252'
+            error: '#FF5252',
+            lightbackground: '#eee9f3'
           }
         }
       }

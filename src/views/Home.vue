@@ -5,6 +5,7 @@
     <HomeOptions />
     <ConhecaOng />
     <OngQuote />
+    <BeforeAfter />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import PageMessage from '@/components/ContentComponents/PageMessage.vue'
 import HomeOptions from '@/components/ContentComponents/HomeOptions.vue'
 import ConhecaOng from '@/components/ContentComponents/ConhecaOng.vue'
 import OngQuote from '@/components/ContentComponents/OngQuote.vue'
+import BeforeAfter from '@/components/ContentComponents/BeforeAfter.vue'
 
 export default {
   name: 'Home',
@@ -21,7 +23,8 @@ export default {
     PageMessage,
     HomeOptions,
     ConhecaOng,
-    OngQuote
+    OngQuote,
+    BeforeAfter
   }
 }
 </script>
