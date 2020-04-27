@@ -31,7 +31,7 @@
     justify-content: center;
     flex-direction: column;
     max-height: 260px;
-    padding-top: 150px;
+    padding: 150px 0;
 }
 .central-text {
     text-align: center;

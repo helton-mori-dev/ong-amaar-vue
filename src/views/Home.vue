@@ -6,6 +6,7 @@
     <ConhecaOng />
     <OngQuote />
     <BeforeAfter />
+    <VenhamVisitar />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HomeOptions from '@/components/ContentComponents/HomeOptions.vue'
 import ConhecaOng from '@/components/ContentComponents/ConhecaOng.vue'
 import OngQuote from '@/components/ContentComponents/OngQuote.vue'
 import BeforeAfter from '@/components/ContentComponents/BeforeAfter.vue'
+import VenhamVisitar from '@/components/ContentComponents/VenhamVisitar.vue'
 
 export default {
   name: 'Home',
@@ -24,7 +26,8 @@ export default {
     HomeOptions,
     ConhecaOng,
     OngQuote,
-    BeforeAfter
+    BeforeAfter,
+    VenhamVisitar
   }
 }
 </script>
