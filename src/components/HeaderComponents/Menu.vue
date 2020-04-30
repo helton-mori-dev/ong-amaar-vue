@@ -5,50 +5,53 @@
     right
     :close-on-content-click="false"
     >
-    <template v-slot:activator="{ on }">
-        <v-btn
-        class="my-menu"
-        text
-        v-on="on"
-        x-large
-        >
-        <i class="v-icon mdi mdi-menu"></i>
-        <span class="header-menu ml-2">Menu</span>
-        </v-btn>
-    </template>
-    <v-container class="img-container">
-        <v-row no-gutters>
-        <v-col cols="6">
-            <v-img 
-            src="../../assets/banner-menu.jpg" 
-            contain
-            min-height="100%"
-            >
+      <template v-slot:activator="{ on }">
+          <v-btn
+          class="my-menu"
+          text
+          v-on="on"
+          x-large
+          >
+          <i class="v-icon mdi mdi-menu"></i>
+          <span class="header-menu ml-2">Menu</span>
+          </v-btn>
+      </template>
+      <v-container class="img-container">
+          <v-row no-gutters>
+          <v-col cols="6">
+              <v-img 
+              src="../../assets/banner-menu.jpg" 
+              contain
+              min-height="100%"
+              >
 
-            </v-img>
-        </v-col>
-        <v-col cols="6" class="menu-container">
-            <v-list 
-            class="list-menu"                    
-            flat             
-            >
-            <v-list-item
-                v-for="(item, i) in items"
-                :key="i"
-                class="label-item"
-            >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-            </v-list-item>
-            </v-list>
-        </v-col>
+              </v-img>
+          </v-col>
+          <v-col cols="6" class="menu-container">
+              <v-list 
+              class="list-menu"                    
+              flat             
+              >
+              <v-list-item
+                  v-for="(item, i) in items"
+                  :key="i"
+                  class="label-item"
+              >
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item>
+              <v-list-item class="links-menu">
+                <SocialLinks />
+              </v-list-item>
+              </v-list>
+          </v-col>
         </v-row>
     </v-container>
-
-
-    </v-menu>
+  </v-menu>
 </template>
 
 <script>
+import SocialLinks from '@//components/GeneralComponents/SocialLinks.vue'
+
 export default {
   name: 'Menu',
   data: () => ({
@@ -59,6 +62,9 @@ export default {
         { title: 'Entre em contato' },
       ],
     }),
+  components: {
+    SocialLinks
+  }
 }
 </script>
 
@@ -68,8 +74,6 @@ export default {
 * {
   font-family: 'Muli', sans-serif;
 }
-
-/* Menu - conferir se as classes estão todas aqui antes de separar em componente */
 
 .header-menu {
   text-transform: uppercase;
@@ -130,4 +134,11 @@ div.v-menu__content > .container{
   color: #503683;
 }
 
+.links-menu .social-links{
+  margin-top: 5px;
+}
+
+.links-menu .social-links i{
+  color: #503683;
+}
 </style>
