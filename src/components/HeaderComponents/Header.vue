@@ -35,7 +35,7 @@
           </a>
           <a 
             class="entre-em-contato"
-            href="/" 
+            href="#contact" 
           >Entre em contato
           </a>
         </div>

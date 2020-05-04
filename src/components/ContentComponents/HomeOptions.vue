@@ -31,7 +31,7 @@
         </v-row>
         <v-row class="text-center anchor-button">
             <v-col>
-                <a href="#ancora">
+                <a href="#ancora-conheca-ong">
                     <v-icon large color="secondary">
                         mdi-arrow-down
                     </v-icon>

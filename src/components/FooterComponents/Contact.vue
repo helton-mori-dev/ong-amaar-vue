@@ -1,5 +1,10 @@
 <template>
-  <v-container primary class="no-max-width">
+  <v-container class="no-max-width" id="contact">
+        <a href="#top" class="arrow-up">
+            <v-icon class="arrow-top">
+                mdi-arrow-up
+            </v-icon>
+        </a>
         <v-container class="container-contato" >
             <v-row>
                 <v-spacer></v-spacer>
@@ -36,6 +41,22 @@ name: 'Contact',
 </script>
 
 <style>
+#contact {
+    background: url(../../assets/background/background-footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#contact .arrow-up {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 13px);
+    text-decoration: none;
+    color: #000;
+}
+
 .container-contato {
     max-width: 1300px;
     display: flex;
