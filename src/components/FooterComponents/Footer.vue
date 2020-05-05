@@ -1,6 +1,7 @@
 <template>
     <v-footer class="main-footer">
         <Contact />
+        <FooterMap />
         <MiniFooter />
     </v-footer>
 </template>
@@ -8,12 +9,14 @@
 <script>
 import Contact from '../FooterComponents/Contact'
 import MiniFooter from '../FooterComponents/MiniFooter'
+import FooterMap from '../FooterComponents/FooterMap'
 
 export default {
     name: 'Footer',
     components: {
         Contact,
-        MiniFooter
+        MiniFooter,
+        FooterMap
     }
 }    
 </script>
