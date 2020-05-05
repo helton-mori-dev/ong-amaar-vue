@@ -36,6 +36,6 @@
     justify-content: center;
     flex-direction: column;
     min-height: 260px;
-    padding-top: 150px;
+    padding: 150px 0;
 }
 </style>

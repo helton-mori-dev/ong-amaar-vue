@@ -10,7 +10,7 @@
     </v-row>
     <v-row >
         <v-spacer></v-spacer>
-        <v-col cols="6" class="central-text">
+        <v-col cols="6" class="central-text-quote">
             Fazemos isso por amor aos animais, o trabalho é <br> 100% voluntário, e damos o nosso melhor para fazê-lo de maneira correta,<br> ética e completa.
         </v-col>
         <v-spacer></v-spacer>
@@ -33,7 +33,7 @@
     max-height: 260px;
     padding: 150px 0;
 }
-.central-text {
+.central-text-quote {
     text-align: center;
     margin: 0 0 60px 0;
     font-size: 20px;

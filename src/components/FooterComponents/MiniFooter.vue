@@ -1,6 +1,6 @@
 <template>
     <v-footer height="60" class="mini-footer">
-        <label for="">2019 - ONG Amaar</label>        
+        <label for="">2020 - ONG Amaar</label>        
     </v-footer>
 </template>
 
