@@ -3,9 +3,9 @@
     <v-row class="text-center" no-gutters>
       <v-col cols="12" class="message">
           <p class="first-text">
-              E você?
+              {{ firstMessage }}
               <span class="second-text">
-                  Quer ajudar? ;)
+                {{ secondMessage }}                  
               </span>
           </p>
       </v-col>
@@ -17,6 +17,12 @@
 <script>
   export default {
     name: 'PageMessage',
+    data() {
+      return {
+        firstMessage: 'E você?',
+        secondMessage: 'Quer ajudar? ;)'
+      }
+    }
   }
 </script>
 

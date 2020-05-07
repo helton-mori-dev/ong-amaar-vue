@@ -3,9 +3,9 @@
     <v-row class="text-center" no-gutters>
       <v-col cols="12" class="message">
         <h1 class="first-text">
-            Dê um
+          {{ firstMessage }}            
             <span class="second-text">
-                Lar temporário
+              {{ secondMessage }}                
             </span>
         </h1>
       </v-col>
@@ -16,6 +16,12 @@
 <script>
   export default {
     name: 'LarTemporario',
+    data() {
+      return {
+        firstMessage: 'Dê um',
+        secondMessage: 'Lar temporário'
+      }
+    }
   }
 </script>
 
