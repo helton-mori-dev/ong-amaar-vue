@@ -14,16 +14,39 @@
     </v-container>
     <TextDark />
     <v-container class="container-message" style="padding-top: 40px">
-      <v-row class="text-center" no-gutters>
+      <v-row class="text-center" no-gutters >
         <v-col cols="12" class="message">
-          <h1 class="first-text" style="line-height: 0">
+          <h2 class="first-text" style="line-height: 0">
             {{ interrogacao }}            
               <span class="second-text" style="font-size: 36px">
                 {{ comoFunciona }}                
               </span>
-          </h1>
+          </h2>
         </v-col>
       </v-row>
+
+    <v-row class="text-center como-funciona">
+        <v-col cols="3">
+          <v-img src="../assets/lar-temporario/hospede.png" height="413px" contain></v-img>
+          <h3><v-icon>mdi-cards-heart</v-icon>Hospede um animalzinho</h3>
+          <label class="text-funciona">Você hospeda um bichinho enquanto procuramos um lar definitivo para ele.</label>
+        </v-col>
+        <v-col cols="3">
+          <v-img src="../assets/lar-temporario/racao.png" height="413px" contain></v-img>
+          <h3><v-icon>mdi-pot-steam</v-icon>Ração</h3>
+          <label class="text-funciona">A ração fica por conta da Amaar. Levamos a quantidade necessária para sua casa.</label>  
+        </v-col>
+        <v-col cols="3">
+          <v-img src="../assets/lar-temporario/medicamentos.png" height="413px" contain></v-img>
+          <h3><v-icon>mdi-pill</v-icon>Medicamentos</h3>
+          <label class="text-funciona">Caso o animalzinho precise ser tratado, também disponibilizamos os medicamentos necessários.</label>  
+        </v-col>
+        <v-col cols="3">
+          <v-img src="../assets/lar-temporario/feira.png" height="413px" contain></v-img>
+          <h3><v-icon>mdi-paw</v-icon>Feira de adoção</h3>
+          <label class="text-funciona">Leve seu pet aos domingos às 9h na feira da Amaar. E, caso não seja adotado, retorne às 17h para buscá-lo.</label>  
+        </v-col>
+    </v-row>
     </v-container>
   </div>
 </template>
@@ -46,6 +69,31 @@
   }
 </script>
 
-<style>
-/**/
+<style scoped>
+.container-message {
+  flex-direction: column;
+}
+.container-message .row{
+  width: 100%;
+  min-height: 100px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.como-funciona h3, .como-funciona label{
+  color: #fff;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+}
+
+.como-funciona h3 i {
+  color: #fff;
+  margin-right: 4px;
+}
+
+.como-funciona .text-funciona{
+  font-weight: 300;
+  color: #ccc;
+}
 </style>
