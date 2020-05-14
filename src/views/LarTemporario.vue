@@ -13,7 +13,7 @@
       </v-row>
     </v-container>
     <TextDark />
-    <v-container class="container-message" style="padding-top: 40px">
+    <v-container class="container-message" style="padding: 40px 0 80px">
       <v-row class="text-center" no-gutters >
         <v-col cols="12" class="message">
           <h2 class="first-text" style="line-height: 0">
@@ -90,10 +90,12 @@
 .como-funciona h3 i {
   color: #fff;
   margin-right: 4px;
+  font-size: 20px;
 }
 
 .como-funciona .text-funciona{
   font-weight: 300;
   color: #ccc;
+  line-height: 20px;
 }
 </style>
