@@ -47,16 +47,21 @@
           <label class="text-funciona">Leve seu pet aos domingos às 9h na feira da Amaar. E, caso não seja adotado, retorne às 17h para buscá-lo.</label>  
         </v-col>
     </v-row>
+
     </v-container>
+    
+    <Duvidas />
   </div>
 </template>
 
 <script>
   import TextDark from '@/components/ContentComponents/TextDark.vue'
+  import Duvidas from '@/components/ContentComponents/Duvidas.vue'
   export default {
     name: 'LarTemporario',
     components: {
-      TextDark
+      TextDark,
+      Duvidas
     },
     data() {
       return {
