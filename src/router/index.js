@@ -22,6 +22,11 @@ Vue.use(VueRouter)
     path: '/sejaumparceiro',
     name: 'SejaUmParceiro',
     component: () => import('../views/SejaUmParceiro.vue')
+  },
+  {
+    path: '/sejaumvoluntario',
+    name: 'SejaUmVoluntario',
+    component: () => import('../views/SejaUmVoluntario.vue')
   }
 ]
 
