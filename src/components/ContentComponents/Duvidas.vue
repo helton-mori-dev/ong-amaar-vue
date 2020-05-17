@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .container-duvidas {
     width: 100%;
     min-height: 200px;
