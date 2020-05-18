@@ -19,13 +19,21 @@
       <v-container class="img-container">
         <v-row no-gutters>
           <v-col cols="6">
-              <v-img 
-              src="../../assets/banner-menu.jpg" 
-              contain
-              min-height="100%"
+            
+            <v-img 
+            src="../../assets/banner-menu.jpg" 
+            contain
+            min-height="100%"
+            >
+              <v-btn 
+                class="close-menu" 
+                text depressed large
+                @click="closeMenu()"
               >
-
-              </v-img>
+                <v-icon>mdi-close</v-icon>
+                Fechar
+              </v-btn>
+            </v-img>
           </v-col>
 
           <v-col cols="6" class="menu-container">
@@ -65,11 +73,34 @@ export default {
     }),
   components: {
     SocialLinks
+  },
+  methods: {
+    closeMenu: function() {
+      document.getElementsByClassName('v-menu__content')[0].style.display = 'none'
+    }
   }
 }
 </script>
 
 <style>
+.close-menu {
+  position: absolute;
+  left: 40%;
+  top: 30px;
+  z-index: 2;
+}
+
+.close-menu span{
+  color: #fff;
+  font-size: 12px;
+}
+
+.close-menu i{
+  background: #503683;
+  border-radius: 100%;
+  padding: 8px;
+  margin-right: 10px;
+}
 
 .header-menu {
   text-transform: uppercase;
