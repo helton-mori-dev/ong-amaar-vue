@@ -1,12 +1,12 @@
 <template>
-    <v-menu
+  <v-menu
     transition="slide-x-transition"
     bottom
     right
     :close-on-content-click="false"
     >
       <template v-slot:activator="{ on }">
-          <v-btn
+        <v-btn
           class="my-menu"
           text
           v-on="on"
@@ -14,10 +14,10 @@
           >
           <i class="v-icon mdi mdi-menu"></i>
           <span class="header-menu ml-2">Menu</span>
-          </v-btn>
+        </v-btn>
       </template>
       <v-container class="img-container">
-          <v-row no-gutters>
+        <v-row no-gutters>
           <v-col cols="6">
               <v-img 
               src="../../assets/banner-menu.jpg" 
@@ -27,24 +27,25 @@
 
               </v-img>
           </v-col>
+
           <v-col cols="6" class="menu-container">
-              <v-list 
-              class="list-menu"                    
-              flat             
-              >
-              <v-list-item
-                  v-for="(item, i) in items"
-                  :key="i"
-                  class="label-item"
-              >
-                  <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item>
-              <v-list-item class="links-menu">
-                <SocialLinks />
-              </v-list-item>
-              </v-list>
-          </v-col>
-        </v-row>
+            <v-list 
+            class="list-menu"                    
+            flat             
+            >
+            <v-list-item
+                v-for="(item, i) in items"
+                :key="i"
+                class="label-item"
+            >
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item>
+            <v-list-item class="links-menu">
+              <SocialLinks />
+            </v-list-item>
+            </v-list>
+        </v-col>
+      </v-row>
     </v-container>
   </v-menu>
 </template>
@@ -69,11 +70,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&display=swap');
-
-* {
-  font-family: 'Muli', sans-serif;
-}
 
 .header-menu {
   text-transform: uppercase;
@@ -91,7 +87,6 @@ export default {
 
 .my-menu i.mdi-menu, .my-menu span {
   color:  #63DED1!important;
-
 }
 
 .my-menu i.mdi-menu {

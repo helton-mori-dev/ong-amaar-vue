@@ -2,7 +2,6 @@
   <v-app>
     <Header/>
       <v-content id="top">
-        <!-- <HelloWorld/> -->
         <router-view></router-view>
       </v-content>
     <Footer />
@@ -18,7 +17,6 @@ export default {
   name: 'App',
 
   components: {
-    // HelloWorld,
     Header,
     Footer
   },
@@ -30,4 +28,10 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Muli', sans-serif;
+}
+
 </style>
