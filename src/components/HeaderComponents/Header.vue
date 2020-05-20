@@ -5,41 +5,42 @@
     color="primary"
     dark
     flat
-    height="95"
+    max-height="95"
+    height="unset"
   >
     <v-container>
-      <v-row>
-      <v-col>
-         <Menu />
-      </v-col>
+      <v-row class="header-col">
+        <v-col class="menu-col">
+          <Menu />
+        </v-col>
 
-      <v-col>
-        <a 
-          class="" 
-          href="/"
-        >
-          <img 
-            class="logo" 
-            src="../../assets/logo.png"
-            dense
-          />
-        </a>
-      </v-col>
+        <v-col class="logo-col">
+          <a 
+            class="" 
+            href="/"
+          >
+            <img 
+              class="logo" 
+              src="../../assets/logo.png"
+              dense
+            />
+          </a>
+        </v-col>
 
-      <v-col class="header-buttons mt-4">
-        <div>
-          <a 
-            class="quero-ajudar"
-            href="about" 
-          >Quero ajudar
-          </a>
-          <a 
-            class="entre-em-contato"
-            href="#contact" 
-          >Entre em contato
-          </a>
-        </div>
-      </v-col>
+        <v-col class="header-buttons mt-4 d-sm-none d-md-flex d-none d-sm-flex">
+          <div>
+            <a 
+              class="quero-ajudar"
+              href="about" 
+            >Quero ajudar
+            </a>
+            <a 
+              class="entre-em-contato"
+              href="#contact" 
+            >Entre em contato
+            </a>
+          </div>
+        </v-col>
       </v-row>
     </v-container>
   </v-app-bar>
@@ -57,11 +58,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700;800,900&display=swap');
-
-* {
-  font-family: 'Muli', sans-serif;
-}
 
 .header-primary > div{
   max-width: 1300px!important;
@@ -73,6 +69,9 @@ export default {
   margin: auto;
 }
 
+.header-primary .v-toolbar__content .container {
+  padding: 0 0;
+}
 .header-buttons {
   justify-content: flex-end;
   flex: 1;
@@ -113,4 +112,23 @@ export default {
   color: #30ada0;
 }
 
+@media screen and (max-width: 960px) {
+  .header-col {
+    margin: auto;
+    display: table;
+    width: 100%;
+  }
+  .menu-col {
+    float: right;
+    width: auto;
+  }
+  .logo-col {
+    float: left;
+    width: auto;
+  }
+  .logo-col .logo{
+    padding: 5px 0 0 20px;
+    max-height: 50px;
+  }
+}
 </style>
