@@ -2,7 +2,7 @@
   <v-container class="container-venham-conhecer">
     <v-row>
         <v-spacer></v-spacer>
-        <v-col cols="8" class="paragraph-text-container">
+        <v-col cols="12" sm="8" class="paragraph-text-container">
             <h2 class="subtitle">Venham nos visitar!</h2>
             <p class="paragraph-text"> 
               Não vamos conseguir mudar o mundo, mas mudamos o mundo de cada animal que passa por nossas mãos. </p>
@@ -14,7 +14,7 @@
               Quem quiser doar ou ser voluntário, é só entrar em contato com uma de nós, inbox ou no Instagram. Com o dinheiro arrecadado, conseguimos tirar muitos animais da rua e oferecer um lar adequado para cada um deles. Caso queiram ajudar, entre em contato com a gente. Temos diversas formas de auxílio para ao ONG Amaar.
             </p>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="4" class="d-none d-sm-flex">
             <v-img src="../../assets/bannervenhamvisitar.jpg"></v-img>
         </v-col>
         <v-spacer></v-spacer>
@@ -37,5 +37,11 @@
     flex-direction: column;
     min-height: 260px;
     padding: 150px 0;
+}
+
+@media screen and  (max-width:960px) {
+  .container-venham-conhecer {
+      padding: 40px 20px;
+  }
 }
 </style>

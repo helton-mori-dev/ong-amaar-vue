@@ -51,4 +51,19 @@
     letter-spacing: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .container-message {
+    padding-top: 125px;
+    min-height: 200px;
+  }
+
+  .first-text {
+    font-size: 4rem;
+    line-height: 0;
+    font-weight: bolder;
+  }
+  .second-text {
+    font-size: 1.5rem;
+  }
+}
 </style>

@@ -27,7 +27,7 @@
           </a>
         </v-col>
 
-        <v-col class="header-buttons mt-4 d-sm-none d-md-flex d-none d-sm-flex">
+        <v-col class="header-buttons mt-4 d-none d-sm-none d-md-none d-md-flex">
           <div>
             <a 
               class="quero-ajudar"

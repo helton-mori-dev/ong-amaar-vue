@@ -10,7 +10,7 @@
     </v-row>
     <v-row >
         <v-spacer></v-spacer>
-        <v-col cols="6" class="central-text-quote">
+        <v-col cols="10" sm="6" class="central-text-quote">
             Fazemos isso por amor aos animais, o trabalho é <br> 100% voluntário, e damos o nosso melhor para fazê-lo de maneira correta,<br> ética e completa.
         </v-col>
         <v-spacer></v-spacer>
@@ -66,4 +66,24 @@
   top: 182px;
 }
 
+@media screen and (max-width:960px) {
+.quotes-style{
+    font-size: 200px;
+}
+
+.quote {
+  position: absolute;
+  z-index: 0;
+}
+
+.left-quote {
+  top: 60px;
+  left: 2%
+}
+
+.right-quote {
+  right: 2%;
+  top: 210px;
+}
+}
 </style>

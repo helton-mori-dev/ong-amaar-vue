@@ -12,17 +12,17 @@
     </v-row>
     <v-row >
         <v-spacer></v-spacer>
-        <v-col cols="6" class="central-text">
+        <v-col cols="12" sm="8" class="central-text">
             Nós somos o Grupo AMAAR, Associação Maringaense de Ajuda aos Animais Resgatados. Somos uma equipe de pessoas comuns que trabalham, estudam tem família e enfrentam batalhas do dia-a-dia como qualquer outro cidadão, mas que doam um pouco de seu tempo para a causa animal.
         </v-col>
         <v-spacer></v-spacer>
     </v-row>
     <v-row>
         <v-spacer></v-spacer>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
             <v-img src="../../assets/oquefazemos.jpg"></v-img>
         </v-col>
-        <v-col cols="8" class="paragraph-text-container">
+        <v-col cols="12" sm="8" class="paragraph-text-container">
             <h2 class="subtitle">O que fazemos?</h2>
             <p class="paragraph-text">Fazemos um trabalho de resgate, recuperação, esterilização, adoção mediante entrevista e acompanhamento pós-adoção. </p>
             
@@ -78,7 +78,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
 }
 .paragraph-text {
     font-size: 17px;
@@ -89,5 +88,33 @@
     font-size: 26px;
     font-weight: 700;
     color: #604298;
+}
+
+@media screen and (max-width: 960px) {
+  .container-message-conheca {
+    padding-top: 100px;
+    min-height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-message-conheca .central-text{
+      text-align: left;
+  }
+
+  .first-text-conheca {
+    font-size: 4rem;
+    line-height: 6px;
+    font-weight: bolder;
+  }
+  .second-text-conheca {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+    .paragraph-text-container {
+        padding-left: 50px;
+    }
 }
 </style>
