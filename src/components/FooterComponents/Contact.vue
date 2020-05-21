@@ -8,10 +8,10 @@
         <v-container class="container-contato" >
             <v-row>
                 <v-spacer></v-spacer>
-                <v-col cols="6" class="paragraph-text-container subtitle-content-footer">
+                <v-col cols="12" sm="6" class="paragraph-text-container subtitle-content-footer">
                     <h2 class="subtitle">Entre em contato :)</h2>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" sm="6">
                     <div class="mini-container">
                         <h3>Feirinha de Adoção</h3>
                         <span>
@@ -52,7 +52,7 @@ name: 'Contact',
 #contact .arrow-up {
     position: absolute;
     top: 0;
-    left: calc(50% - 13px);
+    left: calc(50% - 15px);
     text-decoration: none;
     color: #000;
 }
@@ -77,17 +77,36 @@ name: 'Contact',
     margin-bottom: 20px;
 }
 
-.container-contato .mini-container {
-    display: table;
-    margin: auto
-}
-
 .container-contato .mini-container span {
     color: #ccc;
     font-weight: 300;
+    font-size: 14px;
+    opacity: .7;
 }
 .subtitle-content-footer {
     align-items: center;
     justify-content: flex-start!important;
+}
+
+@media screen and (max-width:960px){
+    .container-contato {
+        padding: 70px 10px;
+    }
+
+    .subtitle-content-footer {
+        align-items: flex-start;
+    }
+
+    .subtitle-content-footer h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .container-contato .mini-container {
+        display: table;
+        margin: auto
+    }
 }
 </style>
