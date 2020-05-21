@@ -53,8 +53,8 @@
 
 @media screen and (max-width: 960px) {
   .container-message {
-    padding-top: 125px;
-    min-height: 200px;
+    padding-top: 70px;
+    min-height: 150px;
   }
 
   .first-text {

@@ -1,12 +1,12 @@
 <template>
   <v-app-bar
-    class="header-primary secondary--text"
-    app
+    class="header-primary secondary--text overflow-hidden"
     color="primary"
     dark
     flat
-    max-height="95"
-    height="unset"
+    hide-on-scroll
+    prominent
+    height="95"
   >
     <v-container>
       <v-row class="header-col">
@@ -27,7 +27,7 @@
           </a>
         </v-col>
 
-        <v-col class="header-buttons mt-4 d-none d-sm-none d-md-none d-md-flex">
+        <v-col class="header-buttons mt-3 d-none d-sm-none d-md-none d-md-flex">
           <div>
             <a 
               class="quero-ajudar"
@@ -129,6 +129,9 @@ export default {
   .logo-col .logo{
     padding: 5px 0 0 20px;
     max-height: 50px;
+  }
+  .header-primary, .header-primary .v-toolbar__content {
+    height: 85px!important;
   }
 }
 </style>
