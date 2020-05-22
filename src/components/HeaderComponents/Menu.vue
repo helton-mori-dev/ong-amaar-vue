@@ -18,11 +18,11 @@
       </template>
       <v-container class="img-container">
         <v-row no-gutters>
-          <v-col cols="6">
+          <v-col cols="12" sm="6" class="d-none d-sm-none d-md-flex">
             
             <v-img 
             src="../../assets/banner-menu.jpg" 
-            contain
+            cover
             min-height="100%"
             >
               <v-btn 
@@ -36,7 +36,15 @@
             </v-img>
           </v-col>
 
-          <v-col cols="6" class="menu-container">
+          <v-col cols="12" md="6" class="menu-container">
+            <v-btn 
+              class="close-menu d-flex d-sm-flex d-md-none" 
+              text depressed large
+              @click="closeMenu()"
+            >
+              <v-icon>mdi-close</v-icon>
+              Fechar
+            </v-btn>
             <v-list 
             class="list-menu"                    
             flat             
@@ -134,6 +142,11 @@ export default {
 
 .img-container {
   padding: 0!important;
+  height: 100%;
+}
+
+.img-container .row {
+  height: 100%;
 }
 
 div.v-menu__content {
@@ -166,5 +179,31 @@ div.v-menu__content > .container{
 
 .links-menu .social-links i{
   color: #503683;
+}
+
+@media screen and (max-width:960px){
+  div.v-menu__content {
+    width: 100vw;
+    max-width: unset;
+  }
+  .menu-container {
+    position: relative;
+    justify-content: flex-start;
+  } 
+  .close-menu {
+    top: -30px;
+    right: 0;
+    left: 60%;
+  }
+  .close-menu span{
+    color: #503683;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .close-menu i:before{
+    color: #fff
+  }
+
 }
 </style>
