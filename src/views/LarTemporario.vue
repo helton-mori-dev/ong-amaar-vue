@@ -26,22 +26,22 @@
       </v-row>
 
     <v-row class="text-center como-funciona">
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-img src="../assets/lar-temporario/hospede.png" height="413px" contain></v-img>
           <h3><v-icon>mdi-cards-heart</v-icon>Hospede um animalzinho</h3>
           <label class="text-funciona">Você hospeda um bichinho enquanto procuramos um lar definitivo para ele.</label>
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-img src="../assets/lar-temporario/racao.png" height="413px" contain></v-img>
           <h3><v-icon>mdi-pot-steam</v-icon>Ração</h3>
           <label class="text-funciona">A ração fica por conta da Amaar. Levamos a quantidade necessária para sua casa.</label>  
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-img src="../assets/lar-temporario/medicamentos.png" height="413px" contain></v-img>
           <h3><v-icon>mdi-pill</v-icon>Medicamentos</h3>
           <label class="text-funciona">Caso o animalzinho precise ser tratado, também disponibilizamos os medicamentos necessários.</label>  
         </v-col>
-        <v-col cols="3">
+        <v-col cols="12" sm="3">
           <v-img src="../assets/lar-temporario/feira.png" height="413px" contain></v-img>
           <h3><v-icon>mdi-paw</v-icon>Feira de adoção</h3>
           <label class="text-funciona">Leve seu pet aos domingos às 9h na feira da Amaar. E, caso não seja adotado, retorne às 17h para buscá-lo.</label>  
@@ -102,5 +102,16 @@
   font-weight: 300;
   color: #ccc;
   line-height: 20px;
+}
+
+@media screen and (max-width:960px){
+  .container-message .row{
+    min-height: 40px;
+  }
+
+  .como-funciona h3, .como-funciona label {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 </style>
