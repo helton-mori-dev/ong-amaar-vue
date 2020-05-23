@@ -189,11 +189,13 @@ div.v-menu__content > .container{
   .menu-container {
     position: relative;
     justify-content: flex-start;
+    flex-direction: column;
   } 
   .close-menu {
     top: -30px;
     right: 0;
-    left: 60%;
+    left: auto;
+    justify-content: flex-end!important;
   }
   .close-menu span{
     color: #503683;

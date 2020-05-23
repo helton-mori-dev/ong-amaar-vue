@@ -2,30 +2,23 @@
     <v-container class="container-options" primary>
         <v-row class="text-center d-none d-sm-none d-md-flex">
             <v-col cols="2" class="adote">
-                <v-img class="img-adote" height="320px" src="../../assets/adote.png"></v-img>
-                <v-img class="adote-hover d-none" height="320px" src="../../assets/adote-hover.png"></v-img>
+                <div class="img-adote"></div>                
                 <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span> Animalzinho</span></a>
             </v-col>
             <v-col cols="2" class="temporario">
-                <v-img class="img-temporario" height="320px" src="../../assets/temporario.png"></v-img>
-                <v-img class="temporario-hover d-none" height="320px" src="../../assets/temporario-hover.png"></v-img>
+                <div class="img-temporario"></div>                
                 <a class="options-link" href="/lartemporario">Dê um<span> Lar temporário</span></a>
             </v-col>
-
             <v-col cols="2" class="doacao">
-                <v-img class="img-doacao" height="320px" src="../../assets/doacao.png"></v-img>
-                <v-img class="doacao-hover d-none" height="320px" src="../../assets/doacao-hover.png"></v-img>
+                <div class="img-doacao"></div>                
                 <a class="options-link" href="#">Faça uma<span> Doação</span></a>
             </v-col>
-
             <v-col cols="2" class="parceiro">
-                <v-img class="img-parceiro" height="320px" src="../../assets/parceiro.png"></v-img>
-                <v-img class="parceiro-hover d-none" height="320px" src="../../assets/parceiro-hover.png"></v-img>
+                <div class="img-parceiro"></div>
                 <a class="options-link" href="sejaumparceiro">Seja um<span> parceiro</span></a>
             </v-col>
             <v-col cols="2" class="voluntario">
-                <v-img class="img-voluntario" height="320px" src="../../assets/voluntario.png"></v-img>
-                <v-img class="voluntario-hover d-none" height="320px" src="../../assets/voluntario-hover.png"></v-img>
+                <div class="img-voluntario"></div>
                 <a class="options-link" href="sejaumvoluntario">Seja um<span> Voluntário</span></a>
             </v-col>
         </v-row>
@@ -119,39 +112,59 @@
         font-weight: 900;
     }
 
-    .container-options .adote:hover .img-adote{
-        display: none;
-    }
-    .container-options .adote:hover .adote-hover{
-        display: flex!important;
-    }
-
-    .container-options .temporario:hover .img-temporario{
-        display: none;
-    }
-    .container-options .temporario:hover .temporario-hover{
-        display: flex!important;
+    .container-options .adote .img-adote{        
+        display: block;
+        height: 314px;
+        width: 220px;
+        background-image: url('../../../public/home-hover/adote.png');
     }
 
-    .container-options .doacao:hover .img-doacao{
-        display: none;
-    }
-    .container-options .doacao:hover .doacao-hover{
-        display: flex!important;
+    .container-options .adote:hover .img-adote{        
+        background-position: 0 -314px;
     }
 
-    .container-options .parceiro:hover .img-parceiro{
-        display: none;
-    }
-    .container-options .parceiro:hover .parceiro-hover{
-        display: flex!important;
+    .container-options .temporario .img-temporario{
+        display: block;
+        height: 313px;
+        width: 220px;
+        background-image: url('../../../public/home-hover/temporario.png');
     }
 
-    .container-options .voluntario:hover .img-voluntario{
-        display: none;
+    .container-options .temporario:hover .img-temporario{        
+        background-position: 0 -313px;
     }
-    .container-options .voluntario:hover .voluntario-hover{
-        display: flex!important;
-    }    
+
+    .container-options .doacao .img-doacao{
+        display: block;
+        height: 313px;
+        width: 220px;
+        background-image: url('../../../public/home-hover/doacao.png');
+    }
+
+    .container-options .doacao:hover .img-doacao{        
+        background-position: 0 -314px;
+    }
+
+    .container-options .parceiro .img-parceiro{
+        display: block;
+        height: 314px;
+        width: 220px;
+        background-image: url('../../../public/home-hover/parceiro.png');
+    }
+
+    .container-options .parceiro:hover .img-parceiro{        
+        background-position: 0 -314px;
+    }
+
+    .container-options .voluntario .img-voluntario{
+        display: block;
+        height: 314px;
+        width: 220px;
+        background-image: url('../../../public/home-hover/voluntario.png');
+    }
+
+    .container-options .voluntario:hover .img-voluntario{        
+        background-position: 0 -314px;
+    }
 }
 </style>
