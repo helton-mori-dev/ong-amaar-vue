@@ -66,16 +66,16 @@ export default {
 
 .container-duvidas .perguntas .pergunta {
     color: #503683;
-    font-weight: 700;
-    width: 700px;
-    border-top: 1px dashed #ded9e3;
+    font-weight: 700;    
+    border-top: 1px dashed #cec9d3;
     display: block;
     margin-bottom: 0;
     padding: 18px 0;
+    width: 100%;
 }
 
 .container-duvidas .perguntas .pergunta:last-child {
-    border-bottom: 1px dashed #ded9e3;
+    border-bottom: 1px dashed #cec9d3;
 }
 
 .container-duvidas .perguntas .pergunta span{
@@ -93,5 +93,17 @@ export default {
     margin: 80px auto;
     border-radius: 30px;
     transition: .3s all ease;
+}
+
+@media screen and (min-width:960px) {
+    .container-duvidas .perguntas .pergunta {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container-duvidas {
+        padding-top: 50px;
+    }
 }
 </style>
