@@ -94,7 +94,6 @@
 .container-duvidas .perguntas .pergunta {
     color: #503683;
     font-weight: 700;
-    width: 700px;
     border-top: 1px dashed #ded9e3;
     display: block;
     margin-bottom: 0;
@@ -120,5 +119,20 @@
     margin: 80px auto;
     border-radius: 30px;
     transition: .3s all ease;
+}
+
+@media screen and (min-width:960px) {
+    .container-duvidas .perguntas .pergunta {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container-duvidas {
+        padding-top: 50px;
+    }
+    .container-duvidas .second-text {
+      font-size: 22px;
+    }
 }
 </style>

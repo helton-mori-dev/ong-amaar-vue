@@ -16,14 +16,14 @@
     <v-container class="container-message-dark">
       <v-row>
           <v-spacer></v-spacer>
-          <v-col cols="6" class="central-text">
+          <v-col cols="10" sm="6" class="central-text">
               Você quer ser um parceiro? Através das parcerias, a ONG conseguiu pagar muitas das suas dívidas. <br>
               Sua ajuda é muito importante!
           </v-col>
           <v-spacer></v-spacer>
       </v-row>
     </v-container>
-
+<!-- 
     <v-container class="container-options" primary>
       <v-row class="text-center">
           <v-col cols="2"></v-col>
@@ -32,7 +32,7 @@
           <v-col cols="2"></v-col>
           <v-col cols="2"></v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
     <v-container class="container-duvidas" no-gutters>
         <v-row class="text-center" no-gutters >
@@ -114,7 +114,6 @@
 .container-duvidas .perguntas .pergunta {
     color: #503683;
     font-weight: 700;
-    width: 700px;
     border-top: 1px dashed #ded9e3;
     display: block;
     margin-bottom: 0;
@@ -140,5 +139,19 @@
     margin: 80px auto;
     border-radius: 30px;
     transition: .3s all ease;
+}
+@media screen and (min-width:960px) {
+    .container-duvidas .perguntas .pergunta {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .container-duvidas {
+        padding-top: 50px;
+    }
+    .container-duvidas .second-text {
+      font-size: 22px;
+    }
 }
 </style>

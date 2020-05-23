@@ -16,7 +16,7 @@
   }
 </script>
 
-<style scoped>
+<style>
 .container-message-dark {
     background: #503683;
     color: #ccc;
