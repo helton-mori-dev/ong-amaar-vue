@@ -1,25 +1,36 @@
 <template>
     <v-container class="container-options" primary>
         <v-row class="text-center d-none d-sm-none d-md-flex">
-            <v-col cols="2" class="adote">
-                <div class="img-adote"></div>                
-                <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span> Animalzinho</span></a>
+            <v-col cols="2" class="adote">                                
+                <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                    <div class="img-adote"></div>
+                    Adote um<span> Animalzinho</span>
+                </a>
             </v-col>
-            <v-col cols="2" class="temporario">
-                <div class="img-temporario"></div>                
-                <a class="options-link" href="/lartemporario">Dê um<span> Lar temporário</span></a>
+            <v-col cols="2" class="temporario">      
+                <a class="options-link" href="/lartemporario">
+                    <div class="img-temporario"></div>   
+                    <p>Dê um</p>
+                    <span> Lar temporário</span>
+                </a>
             </v-col>
-            <v-col cols="2" class="doacao">
-                <div class="img-doacao"></div>                
-                <a class="options-link" href="#">Faça uma<span> Doação</span></a>
+            <v-col cols="2" class="doacao">             
+                <a class="options-link" href="#">
+                    <div class="img-doacao"></div>   
+                    Faça uma<span> Doação</span>
+                </a>
             </v-col>
             <v-col cols="2" class="parceiro">
-                <div class="img-parceiro"></div>
-                <a class="options-link" href="sejaumparceiro">Seja um<span> parceiro</span></a>
+                <a class="options-link" href="sejaumparceiro">
+                    <div class="img-parceiro"></div>
+                    Seja um<span> parceiro</span>
+                </a>
             </v-col>
-            <v-col cols="2" class="voluntario">
-                <div class="img-voluntario"></div>
-                <a class="options-link" href="sejaumvoluntario">Seja um<span> Voluntário</span></a>
+            <v-col cols="2" class="voluntario">                
+                <a class="options-link" href="sejaumvoluntario">
+                    <div class="img-voluntario"></div>
+                    Seja um<span> Voluntário</span>
+                </a>
             </v-col>
         </v-row>
         <v-row class="d-flex d-md-none">
@@ -110,6 +121,26 @@
     .container-options .options-link span{
         display: block;
         font-weight: 900;
+    }
+
+    .container-options a div {
+        margin-bottom: 15px;
+    }
+
+    .container-options a p {
+        margin-bottom: 0;
+    }
+
+    .container-options .adote  {
+        padding-left: 0;
+    }
+
+    .container-options .temporario  {
+        padding-left: 0;
+    }
+
+    .container-options .temporario  a{
+        text-indent: 30px;
     }
 
     .container-options .adote .img-adote{        
