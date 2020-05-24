@@ -29,11 +29,17 @@
 
         <v-col class="header-buttons mt-3 d-none d-sm-none d-md-none d-md-flex">
           <div>
-            <a 
+            <div
               class="quero-ajudar"
-              href="about" 
             >Quero ajudar
-            </a>
+            <ul class="lista-ajudar">
+              <li>Adote um <span>Animalzinho</span></li>
+              <li>Dê um <span>lar temporário</span></li>
+              <li>Faça uma <span>doação</span></li>
+              <li>Seja um <span>parceiro</span></li>
+              <li>Seja um <span>voluntário</span></li>
+            </ul>
+            </div>
             <a 
               class="entre-em-contato"
               href="#contact" 
@@ -58,6 +64,11 @@ export default {
 </script>
 
 <style>
+header.header-primary.v-app-bar {
+  overflow: visible!important;
+  position: relative;
+  z-index: 1;
+}
 
 .header-primary > div{
   max-width: 1300px!important;
@@ -79,7 +90,6 @@ export default {
 
 .header-buttons > div {
   float: right;
-
 }
 
 .header-buttons > div a {
@@ -91,14 +101,59 @@ export default {
   text-decoration: none;
 }
 
-.header-buttons > div a.quero-ajudar{
+.header-buttons > div div.quero-ajudar{
   border-radius: 25px;
   background: #63DED1;
+  position: relative;
+  float: left;
+  color: #503683;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;  
+  cursor: pointer;
+}
+
+.header-buttons > div div.quero-ajudar:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 15px;
+  display: block;
+  width: 100%;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 15px);
+  background: #fff;
+  padding: 22px 25px;
+  border-radius: 10px;
+  z-index: 100;
+  transition: .3s all ease;
+  list-style: none;
+  min-width: 230px;
+}
+
+.header-buttons > div div.quero-ajudar:hover .lista-ajudar {
+  display: block;
   transition: .3s all ease;
 }
 
-.header-buttons > div a.quero-ajudar:hover{
-  opacity: .6;
+.header-buttons > div div.quero-ajudar .lista-ajudar li{
+  text-align: left;
+  width: 100%;
+  padding: 0 0 10px;
+  font-weight: 500;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar span{
+  font-weight: 700;
 }
 
 .header-buttons > div a.entre-em-contato{
