@@ -32,13 +32,33 @@
             <div
               class="quero-ajudar"
             >Quero ajudar
-            <ul class="lista-ajudar">
-              <li>Adote um <span>Animalzinho</span></li>
-              <li>Dê um <span>lar temporário</span></li>
-              <li>Faça uma <span>doação</span></li>
-              <li>Seja um <span>parceiro</span></li>
-              <li>Seja um <span>voluntário</span></li>
-            </ul>
+              <ul class="lista-ajudar">
+                <li>
+                  <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                  Adote um <span>Animalzinho</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="options-link" href="/lartemporario">
+                  Dê um <span>lar temporário</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="options-link" href="#">
+                    Faça uma <span>doação</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="options-link" href="sejaumparceiro">
+                  Seja um <span>parceiro</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="options-link" href="sejaumvoluntario">
+                    Seja um <span>voluntário</span>
+                  </a>
+                </li>
+              </ul>
             </div>
             <a 
               class="entre-em-contato"
@@ -132,7 +152,7 @@ header.header-primary.v-app-bar {
   left: 0;
   top: calc(100% + 15px);
   background: #fff;
-  padding: 22px 25px;
+  padding: 22px 9px;
   border-radius: 10px;
   z-index: 100;
   transition: .3s all ease;
@@ -150,6 +170,10 @@ header.header-primary.v-app-bar {
   width: 100%;
   padding: 0 0 10px;
   font-weight: 500;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar li:hover a{
+  font-weight: bold;
 }
 
 .header-buttons > div div.quero-ajudar .lista-ajudar span{
