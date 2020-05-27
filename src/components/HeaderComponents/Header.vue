@@ -44,7 +44,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="options-link" href="#">
+                  <a class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
                     Faça uma <span>doação</span>
                   </a>
                 </li>
