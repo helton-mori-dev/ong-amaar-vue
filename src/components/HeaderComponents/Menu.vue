@@ -49,12 +49,21 @@
             class="list-menu"                    
             flat             
             >
-            <v-list-item
-                v-for="(item, i) in items"
-                :key="i"
-                class="label-item"
-            >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item class="label-item">
+                <v-list-item-title>Quero ajudar</v-list-item-title>
+            </v-list-item>
+            <v-list-item class="label-item">
+                <v-list-item-title>
+                  <a href="/#ancora-conheca-ong">Sobre a ONG Amaar</a>
+                </v-list-item-title>
+            </v-list-item>
+            <v-list-item class="label-item">
+                <v-list-item-title>Prestação de contas</v-list-item-title>
+            </v-list-item>
+            <v-list-item class="label-item">
+              <v-list-item-title>
+                <a href="/#contact">Entre em contato</a>
+              </v-list-item-title>              
             </v-list-item>
             <v-list-item class="links-menu">
               <SocialLinks />
@@ -71,14 +80,7 @@ import SocialLinks from '@//components/GeneralComponents/SocialLinks.vue'
 
 export default {
   name: 'Menu',
-  data: () => ({
-      items: [
-        { title: 'Quero ajudar' },
-        { title: 'Sobre a ONG Amaar' },
-        { title: 'Prestação de contas' },
-        { title: 'Entre em contato' },
-      ],
-    }),
+
   components: {
     SocialLinks
   },
@@ -171,6 +173,15 @@ div.v-menu__content > .container{
   font-size: 28px!important;
   font-weight: 700;
   color: #503683;
+}
+
+.label-item a {
+  text-decoration: none;
+  transition: .3s all ease;
+}
+
+.label-item a:hover {
+  color: darkcyan;
 }
 
 .links-menu .social-links{
