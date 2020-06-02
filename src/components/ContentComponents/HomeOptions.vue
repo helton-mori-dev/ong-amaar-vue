@@ -15,7 +15,6 @@
                 </a>
             </v-col>
             <v-col cols="2" class="doacao">             
-                <!-- <a class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2"> -->
                 <a class="options-link" href="/facaumadoacao">
                     <div class="img-doacao"></div>   
                     Faça uma<span> Doação</span>
@@ -46,7 +45,7 @@
 
             <v-col cols="12" class="doacao">
                 <v-img class="img-doacao" src="../../assets/doacao-mobile.png"></v-img>
-                <a class="options-link" href="#">Faça uma<span> Doação</span></a>
+                <a class="options-link" href="/facaumadoacao">Faça uma<span> Doação</span></a>
             </v-col>
 
             <v-col cols="12" class="parceiro">

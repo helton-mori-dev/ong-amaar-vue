@@ -14,7 +14,7 @@
     </v-container>
     <v-container class="container-banner">
       <v-row class="text-center row-banner" no-gutters>
-        <v-col cols="9">
+        <v-col cols="12" sm="9">
           <a href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2" target=blank>
             <v-img 
               src="../assets/doacao/banner-doacao-principal.png"
@@ -139,7 +139,9 @@
 .container-banner .row-banner {
   text-align: center;
   justify-content: center;  
+  width: 100%;
 }
+
 .anchor-button-doacao {
     padding: 40px 0;
     background: #503683;
@@ -228,5 +230,9 @@
   .container-fundos > .linha-scroll > div {
     max-width: 24%;
   }
+
+  .container-cirurgias-tratamentos {
+    padding: 50px 15px 100px;
+}
 }
 </style>
