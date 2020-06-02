@@ -85,6 +85,11 @@ export default {
 </script>
 
 <style>
+
+.header-primary {
+  position: fixed;
+}
+
 header.header-primary.v-app-bar {
   overflow: visible!important;
   position: relative;
