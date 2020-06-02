@@ -15,11 +15,13 @@
     <v-container class="container-banner">
       <v-row class="text-center row-banner" no-gutters>
         <v-col cols="9">
-          <v-img 
-            src="../assets/doacao/banner-doacao-principal.png"
-            center
-            >
-          </v-img>
+          <a href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2" target=blank>
+            <v-img 
+              src="../assets/doacao/banner-doacao-principal.png"
+              center
+              >
+            </v-img>
+          </a>
         </v-col>
           
       </v-row>
@@ -34,7 +36,6 @@
                   
           </v-col>
       </v-row>
-
     
   <v-container class="container-message-doacao" id="ancora-doacao">
     <v-row class="text-center mb-10 container-historia" no-gutters>
@@ -60,7 +61,56 @@
       <v-spacer></v-spacer>
     </v-row>
   </v-container>
+  <v-container class="container-fundos no-max-width" lightbackground>
 
+    <v-row class="margin-auto flex-center">
+      <v-col cols="12" sm="8" class="central-text-fundos">
+          <h2>Nós coletamos fundos para:</h2>
+      </v-col>
+    </v-row>
+    <v-col class="horizontal-scroll" cols="12">
+      <v-row class="text-center linha-scroll">
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-consultas.png"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-cirurgias.png"></v-img>
+        </v-col>
+
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-vacinas.png"></v-img>
+        </v-col>
+
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-medicamentos.png"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-racao.png"></v-img>
+        </v-col>
+        <v-col cols="2">
+          <v-img src="../assets/doacao/fundos-acessorios.png"></v-img>
+        </v-col>
+      </v-row>
+    </v-col>
+  </v-container>
+  <v-container class="container-cirurgias-tratamentos">
+    <v-row>
+        <v-spacer></v-spacer>
+        <v-col cols="12" sm="8" class="paragraph-text-container">
+            <h2 class="subtitle">Foram realizadas mais de 200 cirurgias e tratamentos</h2>
+            <p class="paragraph-text"> 
+              Esse é o Bill. Ele foi encontrado se arrastando na rua. Tinha pneumonia e suspeita de fraturas. Graças ao apoio da comunidade foi possível pagar as consultas e tratamento do Bill e de muitos outros animais que precisaram de tratamento.
+            </p>
+
+        </v-col>
+        <v-col cols="4" class="d-none d-sm-flex">
+            <v-img src="../assets/doacao/banner-cirurgias-tratamentos.png"></v-img>
+        </v-col>
+        <v-spacer></v-spacer>
+    </v-row>
+  </v-container>
+
+  <a class="btn-ajudar" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2" target="blank">Quero fazer uma doação</a>
   </div>
 </template>
 
@@ -105,4 +155,78 @@
     padding-top: 100px;
 }
 
+.container-fundos .linha-scroll {
+    max-width: 1300px;
+    margin: auto;
+    justify-content: center;
+}
+.container-fundos {
+    padding: 40px 0 80px;
+}
+.container-fundos h2 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.container-fundos .central-text-fundos span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #666;
+}
+.central-text-fundos {
+    text-align: center;
+    color: #604298;
+    margin-bottom: 10px;
+}
+.container-cirurgias-tratamentos {
+    background:  #fff;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 260px;
+    padding: 50px 0 100px;
+}
+
+.container-cirurgias-tratamentos .subtitle {
+  font-size: 20px;
+}
+
+.container-cirurgias-tratamentos .paragraph-text {
+  margin-top: 10px;
+}
+
+.btn-ajudar{
+  border-radius: 28px;
+  background: #63DED1;
+  color: #503683;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;  
+  cursor: pointer;
+  display: table;
+  margin: 0 auto 100px;
+  transition: 0.3s all ease;
+}
+
+.btn-ajudar:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 960px) {
+
+  .horizontal-scroll {
+    overflow: scroll;    
+  }
+
+  .container-fundos .linha-scroll {
+      max-width: none;
+      width: 1350px;
+  }
+
+  .container-fundos > .linha-scroll > div {
+    max-width: 24%;
+  }
+}
 </style>

@@ -1,5 +1,6 @@
 <template>
   <v-app-bar
+    id="header-primary"
     class="header-primary secondary--text overflow-hidden"
     color="primary"
     dark
