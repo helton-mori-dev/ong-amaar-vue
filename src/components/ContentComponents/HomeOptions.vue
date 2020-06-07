@@ -2,59 +2,59 @@
     <v-container class="container-options" primary>
         <v-row class="text-center d-none d-sm-none d-md-flex">
             <v-col cols="2" class="adote">                                
-                <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                <v-btn class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
                     <div class="img-adote"></div>
                     Adote um<span> Animalzinho</span>
-                </a>
+                </v-btn>
             </v-col>
             <v-col cols="2" class="temporario">      
-                <a class="options-link" href="/lartemporario">
+                <v-btn class="options-link" to="/lartemporario">
                     <div class="img-temporario"></div>   
                     <p>Dê um</p>
                     <span> Lar temporário</span>
-                </a>
+                </v-btn>
             </v-col>
             <v-col cols="2" class="doacao">             
-                <a class="options-link" href="/facaumadoacao">
+                <v-btn class="options-link" to="/facaumadoacao">
                     <div class="img-doacao"></div>   
                     Faça uma<span> Doação</span>
-                </a>
+                </v-btn>
             </v-col>
             <v-col cols="2" class="parceiro">
-                <a class="options-link" href="sejaumparceiro">
+                <v-btn class="options-link" to="sejaumparceiro">
                     <div class="img-parceiro"></div>
                     Seja um<span> parceiro</span>
-                </a>
+                </v-btn>
             </v-col>
             <v-col cols="2" class="voluntario">                
-                <a class="options-link" href="sejaumvoluntario">
+                <v-btn class="options-link" to="sejaumvoluntario">
                     <div class="img-voluntario"></div>
                     Seja um<span> Voluntário</span>
-                </a>
+                </v-btn>
             </v-col>
         </v-row>
         <v-row class="d-flex d-md-none">
             <v-col cols="12" class="adote">
                 <v-img class="img-adote" src="../../assets/adote-mobile.png"></v-img>
-                <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span> Animalzinho</span></a>
+                <v-btn class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span> Animalzinho</span></v-btn>
             </v-col>
             <v-col cols="12" class="temporario">
                 <v-img class="img-temporario" src="../../assets/temporario-mobile.png"></v-img>
-                <a class="options-link" href="/lartemporario">Dê um<span> Lar temporário</span></a>
+                <v-btn class="options-link" to="/lartemporario">Dê um<span> Lar temporário</span></v-btn>
             </v-col>
 
             <v-col cols="12" class="doacao">
                 <v-img class="img-doacao" src="../../assets/doacao-mobile.png"></v-img>
-                <a class="options-link" href="/facaumadoacao">Faça uma<span> Doação</span></a>
+                <v-btn class="options-link" to="/facaumadoacao">Faça uma<span> Doação</span></v-btn>
             </v-col>
 
             <v-col cols="12" class="parceiro">
                 <v-img class="img-parceiro" src="../../assets/parceiro-mobile.png"></v-img>
-                <a class="options-link" href="sejaumparceiro">Seja um<span> parceiro</span></a>
+                <v-btn class="options-link" to="sejaumparceiro">Seja um<span> parceiro</span></v-btn>
             </v-col>
             <v-col cols="12" class="voluntario">
                 <v-img class="img-voluntario" src="../../assets/voluntario-mobile.png"></v-img>
-                <a class="options-link" href="sejaumvoluntario">Seja um<span> Voluntário</span></a>
+                <v-btn class="options-link" to="sejaumvoluntario">Seja um<span> Voluntário</span></v-btn>
             </v-col>
         </v-row>
         <v-row class="text-center anchor-button">

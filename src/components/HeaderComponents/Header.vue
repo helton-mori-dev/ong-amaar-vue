@@ -40,24 +40,24 @@
                   </a>
                 </li>
                 <li>
-                  <a class="options-link" href="/lartemporario">
+                  <v-btn class="options-link" href="/lartemporario">
                   Dê um <span>lar temporário</span>
-                  </a>
+                  </v-btn>
                 </li>
                 <li>
-                  <a class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
+                  <v-btn class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
                     Faça uma <span>doação</span>
-                  </a>
+                  </v-btn>
                 </li>
                 <li>
-                  <a class="options-link" href="sejaumparceiro">
+                  <v-btn class="options-link" href="sejaumparceiro">
                   Seja um <span>parceiro</span>
-                  </a>
+                  </v-btn>
                 </li>
                 <li>
-                  <a class="options-link" href="sejaumvoluntario">
+                  <v-btn class="options-link" href="sejaumvoluntario">
                     Seja um <span>voluntário</span>
-                  </a>
+                  </v-btn>
                 </li>
               </ul>
             </div>
