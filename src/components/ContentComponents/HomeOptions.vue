@@ -35,26 +35,36 @@
         </v-row>
         <v-row class="d-flex d-md-none">
             <v-col cols="12" class="adote">
+                <v-btn flat text dark depressed height="unset" class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
                 <v-img class="img-adote" src="../../assets/adote-mobile.png"></v-img>
-                <v-btn class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">Adote um<span> Animalzinho</span></v-btn>
+                Adote um<span> Animalzinho</span>
+                </v-btn>
             </v-col>
             <v-col cols="12" class="temporario">
+                <v-btn flat text dark depressed height="unset" class="options-link" to="/lartemporario">
                 <v-img class="img-temporario" src="../../assets/temporario-mobile.png"></v-img>
-                <v-btn class="options-link" to="/lartemporario">Dê um<span> Lar temporário</span></v-btn>
+                Dê um<span> Lar temporário</span>
+                </v-btn>
             </v-col>
 
             <v-col cols="12" class="doacao">
+                <v-btn flat text dark depressed height="unset" class="options-link" to="/facaumadoacao">
                 <v-img class="img-doacao" src="../../assets/doacao-mobile.png"></v-img>
-                <v-btn class="options-link" to="/facaumadoacao">Faça uma<span> Doação</span></v-btn>
+                Faça uma<span> Doação</span>
+                </v-btn>
             </v-col>
 
             <v-col cols="12" class="parceiro">
+                <v-btn flat text dark depressed height="unset" class="options-link" to="sejaumparceiro">
                 <v-img class="img-parceiro" src="../../assets/parceiro-mobile.png"></v-img>
-                <v-btn class="options-link" to="sejaumparceiro">Seja um<span> parceiro</span></v-btn>
+                Seja um<span> parceiro</span>
+                </v-btn>
             </v-col>
             <v-col cols="12" class="voluntario">
+                <v-btn flat text dark depressed height="unset" class="options-link" to="sejaumvoluntario">
                 <v-img class="img-voluntario" src="../../assets/voluntario-mobile.png"></v-img>
-                <v-btn class="options-link" to="sejaumvoluntario">Seja um<span> Voluntário</span></v-btn>
+                Seja um<span> Voluntário</span>
+                </v-btn>
             </v-col>
         </v-row>
         <v-row class="text-center anchor-button">
@@ -125,6 +135,15 @@
     .container-options .options-link {
         width: 100%;
         text-align: center;
+    }
+
+    .container-options .options-link > span{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adote, .temporario, .doacao, .parceiro, .voluntario {
+        padding: 0;
     }
 }
 
