@@ -1,37 +1,37 @@
 <template>
     <v-container class="container-options" primary>
         <v-row class="text-center d-none d-sm-none d-md-flex">
-            <v-col cols="2" class="adote">                                
-                <v-btn class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+            <v-btn flat text dark depressed height="unset" max-width="225" ripple="false" class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                <v-col class="adote">                                
                     <div class="img-adote"></div>
                     Adote um<span> Animalzinho</span>
-                </v-btn>
-            </v-col>
-            <v-col cols="2" class="temporario">      
-                <v-btn class="options-link" to="/lartemporario">
+                </v-col>
+            </v-btn>
+            <v-btn flat text dark depressed height="unset" max-width="225" ripple="false" class="options-link" to="/lartemporario">
+                <v-col class="temporario">      
                     <div class="img-temporario"></div>   
                     <p>Dê um</p>
-                    <span> Lar temporário</span>
-                </v-btn>
-            </v-col>
-            <v-col cols="2" class="doacao">             
-                <v-btn class="options-link" to="/facaumadoacao">
+                <span> Lar temporário</span>
+                </v-col>
+            </v-btn>
+            <v-btn flat text dark depressed height="unset" max-width="225" ripple="false" class="options-link" to="/facaumadoacao">
+                <v-col class="doacao">             
                     <div class="img-doacao"></div>   
                     Faça uma<span> Doação</span>
-                </v-btn>
-            </v-col>
-            <v-col cols="2" class="parceiro">
-                <v-btn class="options-link" to="sejaumparceiro">
+                </v-col>
+            </v-btn>
+            <v-btn flat text dark depressed height="unset" max-width="225" ripple="false" class="options-link" to="sejaumparceiro">
+                <v-col class="parceiro">
                     <div class="img-parceiro"></div>
                     Seja um<span> parceiro</span>
-                </v-btn>
-            </v-col>
-            <v-col cols="2" class="voluntario">                
-                <v-btn class="options-link" to="sejaumvoluntario">
+                </v-col>
+            </v-btn>
+            <v-btn flat text dark depressed height="unset" max-width="225" ripple="false" class="options-link" to="sejaumvoluntario">
+                <v-col class="voluntario">                
                     <div class="img-voluntario"></div>
                     Seja um<span> Voluntário</span>
-                </v-btn>
-            </v-col>
+                </v-col>
+            </v-btn>
         </v-row>
         <v-row class="d-flex d-md-none">
             <v-col cols="12" class="adote">
@@ -96,7 +96,7 @@
     color: #63DED1;
     text-decoration: none;
     font-weight: 300;
-    padding-top: 15px;
+    padding: 15px 0 0!important;
     display: block;
     line-height: 20px;
 }
@@ -105,10 +105,21 @@
     font-weight: 900;
 }
 
+.container-options .options-link div{
+    font-weight: 400;
+}
+
 .anchor-button {
     padding: 80px 0;
 }
 
+.options-link.v-btn:before {
+    display: none;
+}
+
+.v-ripple__container {
+    display:none !important;
+}
 
 @media screen and (max-width:960px) {
     .container-options .options-link {
@@ -146,7 +157,7 @@
     .container-options .adote .img-adote{        
         display: block;
         height: 314px;
-        width: 220px;
+        width: 211px;
         background-image: url('../../../public/home-hover/adote.png');
     }
 
