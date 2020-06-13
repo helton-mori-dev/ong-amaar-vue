@@ -35,28 +35,28 @@
             >Quero ajudar
               <ul class="lista-ajudar">
                 <li>
-                  <a class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
-                  Adote um <span>Animalzinho</span>
-                  </a>
-                </li>
-                <li>
-                  <v-btn class="options-link" href="/lartemporario">
-                  Dê um <span>lar temporário</span>
+                  <v-btn flat text dark depressed  class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                  Adote um <span class="bold">Animalzinho</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
-                    Faça uma <span>doação</span>
+                  <v-btn flat text dark depressed class="options-link" to="/lartemporario">
+                  Dê um <span class="bold">lar temporário</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn class="options-link" href="sejaumparceiro">
-                  Seja um <span>parceiro</span>
+                  <v-btn flat text dark depressed class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
+                    Faça uma <span class="bold">doação</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn class="options-link" href="sejaumvoluntario">
-                    Seja um <span>voluntário</span>
+                  <v-btn flat text dark depressed class="options-link" to="sejaumparceiro">
+                  Seja um <span class="bold">parceiro</span>
+                  </v-btn>
+                </li>
+                <li>
+                  <v-btn flat text dark depressed class="options-link" to="sejaumvoluntario">
+                    Seja um <span class="bold">voluntário</span>
                   </v-btn>
                 </li>
               </ul>
@@ -127,7 +127,7 @@ header.header-primary.v-app-bar {
   text-decoration: none;
 }
 
-.header-buttons > div div.quero-ajudar{
+.header-buttons > div div.quero-ajudar {
   border-radius: 25px;
   background: #63DED1;
   position: relative;
@@ -139,6 +139,25 @@ header.header-primary.v-app-bar {
   text-align: center;
   text-decoration: none;  
   cursor: pointer;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar li a{
+  color: #503683;
+  text-transform: initial;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span{
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span:hover{
+  font-weight: 900;
+}
+
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span .bold{
+  font-weight: bolder;
+  padding-left: 2px;
 }
 
 .header-buttons > div div.quero-ajudar:after{
@@ -174,7 +193,7 @@ header.header-primary.v-app-bar {
 .header-buttons > div div.quero-ajudar .lista-ajudar li{
   text-align: left;
   width: 100%;
-  padding: 0 0 10px;
+  padding: 0 0 0;
   font-weight: 500;
 }
 
