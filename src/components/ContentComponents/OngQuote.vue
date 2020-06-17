@@ -10,8 +10,7 @@
     </v-row>
     <v-row >
         <v-spacer></v-spacer>
-        <v-col cols="10" sm="6" class="central-text-quote">
-            Fazemos isso por amor aos animais, o trabalho é <br> 100% voluntário, e damos o nosso melhor para fazê-lo de maneira correta,<br> ética e completa.
+        <v-col cols="10" sm="6" class="central-text-quote" v-html="textQuote">
         </v-col>
         <v-spacer></v-spacer>
     </v-row>
@@ -21,6 +20,11 @@
 <script>
   export default {
     name: 'OngQuote',
+    data () {
+      return {
+        textQuote: `Fazemos isso por amor aos animais, o trabalho é <br> 100% voluntário, e damos o nosso melhor para fazê-lo de maneira correta,<br> ética e completa.`
+      }
+    }
   }
 </script>
 
