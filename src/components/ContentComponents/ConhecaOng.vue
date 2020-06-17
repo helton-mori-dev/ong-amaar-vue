@@ -24,14 +24,10 @@
         </v-col>
         <v-col cols="12" sm="8" class="paragraph-text-container">
             <h2 class="subtitle">O que fazemos?</h2>
-            <p class="paragraph-text">Fazemos um trabalho de resgate, recuperação, esterilização, adoção mediante entrevista e acompanhamento pós-adoção. </p>
-            
-            <p class="paragraph-text">
-                Nossa capacidade de resgate é muito limitada, pois não temos abrigo e nem dinheiro, dependemos de pessoas solidárias que hospedam os animais em suas casas até que sejam adotados e dependemos de doações para mantê-los e para pagar as clínicas veterinárias, as quais não temos palavras pra agradecer pela parceria fantástica, por todos os descontos e principalmente todo carinho e dedicação que sempre dão aos nossos resgatados. 
-            </p>
-            <p class="paragraph-text">
-
-                Nossa feira de adoção acontece há 5 anos, todos os domingos das 9:30 às 17:00 na Praça do Bem (em frente à ATI do Parque do Ingá). As vagas da feira são voltadas principalmente aos nossos resgates, aos animais da ONG Dignidade Animal à qual temos uma parceria, e à animais resgatados por pessoas da comunidade. Além disso, fazemos um trabalho de conscientização e orientação à todos que buscam por nossa ajuda de alguma maneira.
+            <p 
+                class="paragraph-text"
+                v-for="paragrafo in paragrafos" :key="paragrafo">
+                {{paragrafo}}
             </p>
         </v-col>
         <v-spacer></v-spacer>
@@ -42,6 +38,15 @@
 <script>
   export default {
     name: 'ConhecaOng',
+    data() {
+        return {
+            paragrafos: [
+                'Fazemos um trabalho de resgate, recuperação, esterilização, adoção mediante entrevista e acompanhamento pós-adoção.',
+                'Nossa capacidade de resgate é muito limitada, pois não temos abrigo e nem dinheiro, dependemos de pessoas solidárias que hospedam os animais em suas casas até que sejam adotados e dependemos de doações para mantê-los e para pagar as clínicas veterinárias, as quais não temos palavras pra agradecer pela parceria fantástica, por todos os descontos e principalmente todo carinho e dedicação que sempre dão aos nossos resgatados.',
+                'Nossa feira de adoção acontece há 5 anos, todos os domingos das 9:30 às 17:00 na Praça do Bem (em frente à ATI do Parque do Ingá). As vagas da feira são voltadas principalmente aos nossos resgates, aos animais da ONG Dignidade Animal à qual temos uma parceria, e à animais resgatados por pessoas da comunidade. Além disso, fazemos um trabalho de conscientização e orientação à todos que buscam por nossa ajuda de alguma maneira.'
+            ]
+        }
+    }
   }
 </script>
 
