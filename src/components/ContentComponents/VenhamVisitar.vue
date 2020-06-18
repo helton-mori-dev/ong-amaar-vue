@@ -4,14 +4,9 @@
         <v-spacer></v-spacer>
         <v-col cols="12" sm="8" class="paragraph-text-container">
             <h2 class="subtitle">Venham nos visitar!</h2>
-            <p class="paragraph-text"> 
-              Não vamos conseguir mudar o mundo, mas mudamos o mundo de cada animal que passa por nossas mãos. </p>
-            
-            <p class="paragraph-text">
-                Agradecemos em nome de todos os bichinhos à todas as pessoas que nos ajudaram até aqui e continuam nos ajudando. Aproveitamos pra convidá-los a conhecer nossa feira de adoção, que ocorre todos os domingos na Praça do Bem, temos diversos tipos de animais para alegrar ainda mais a sua casa.
-            </p>
-            <p class="paragraph-text">
-              Quem quiser doar ou ser voluntário, é só entrar em contato com uma de nós, inbox ou no Instagram. Com o dinheiro arrecadado, conseguimos tirar muitos animais da rua e oferecer um lar adequado para cada um deles. Caso queiram ajudar, entre em contato com a gente. Temos diversas formas de auxílio para ao ONG Amaar.
+            <p class="paragraph-text" v-for="paragrafo in paragrafos" 
+            :key="paragrafo">       
+              {{ paragrafo }}       
             </p>
         </v-col>
         <v-col cols="4" class="d-none d-sm-flex">
@@ -25,6 +20,15 @@
 <script>
   export default {
     name: 'VenhamVisitar',
+    data () {
+      return {
+        paragrafos: [
+          'Não vamos conseguir mudar o mundo, mas mudamos o mundo de cada animal que passa por nossas mãos.',
+          'Agradecemos em nome de todos os bichinhos à todas as pessoas que nos ajudaram até aqui e continuam nos ajudando. Aproveitamos pra convidá-los a conhecer nossa feira de adoção, que ocorre todos os domingos na Praça do Bem, temos diversos tipos de animais para alegrar ainda mais a sua casa.',
+          'Quem quiser doar ou ser voluntário, é só entrar em contato com uma de nós, inbox ou no Instagram. Com o dinheiro arrecadado, conseguimos tirar muitos animais da rua e oferecer um lar adequado para cada um deles. Caso queiram ajudar, entre em contato com a gente. Temos diversas formas de auxílio para ao ONG Amaar.'
+        ]
+      }
+    }
   }
 </script>
 
