@@ -87,7 +87,7 @@ export default {
 <style>
 
 .header-primary {
-  position: fixed;
+  position: fixed!important;
 }
 
 header.header-primary.v-app-bar {
