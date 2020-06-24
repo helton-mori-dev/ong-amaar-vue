@@ -25,10 +25,14 @@
             </v-col>
         </v-row>
         <v-row class="perguntas">
-            <p class="pergunta"><span>+</span> O que é necessário para ser um voluntário?</p>
-            <p class="pergunta"><span>+</span> Quanto tempo preciso disponibilizar para o trabalho voluntário?</p>
-            <p class="pergunta"><span>+</span> Posso conhecer a instituição antes?</p>
-            <p class="pergunta"><span>+</span> É preciso ter alguma formação profissional?</p>
+            <p class="pergunta" v-on:click="show1 = !show1"><span>+</span> O que é necessário para ser um voluntário?</p>
+            <p class="resposta" v-show="show1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque delectus reiciendis id consequuntur dolores laudantium nobis blanditiis a laborum totam culpa sequi nisi, iste dolore neque veritatis fuga consectetur?</p>
+            <p class="pergunta" v-on:click="show2 = !show2"><span>+</span> Quanto tempo preciso disponibilizar para o trabalho voluntário?</p>
+            <p class="resposta" v-show="show2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque delectus reiciendis id consequuntur dolores laudantium nobis blanditiis a laborum totam culpa sequi nisi, iste dolore neque veritatis fuga consectetur?</p>
+            <p class="pergunta" v-on:click="show3 = !show3"><span>+</span> Posso conhecer a instituição antes?</p>
+            <p class="resposta" v-show="show3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque delectus reiciendis id consequuntur dolores laudantium nobis blanditiis a laborum totam culpa sequi nisi, iste dolore neque veritatis fuga consectetur?</p>
+            <p class="pergunta" v-on:click="show4 = !show4"><span>+</span> É preciso ter alguma formação profissional?</p>
+            <p class="resposta" v-show="show4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos doloremque delectus reiciendis id consequuntur dolores laudantium nobis blanditiis a laborum totam culpa sequi nisi, iste dolore neque veritatis fuga consectetur?</p>
         </v-row>
         <v-btn depressed large color="secondary" class="btn-lar">Faça parte da Equipe Amaar</v-btn>
     </v-container>
@@ -43,7 +47,11 @@
         firstMessage: 'Seja um',
         secondMessage: 'Voluntário',
         exclamacao: '!',
-        duvidasFrequentes: 'Dúvidas Frequentes'
+        duvidasFrequentes: 'Dúvidas Frequentes',
+        show1: false,
+        show2: false,
+        show3: false,
+        show4: false
       }
     }
   }
@@ -55,6 +63,13 @@
     background: #503683;
     color: #ccc;
     max-width: none;
+}
+.pergunta {
+    cursor: pointer;
+}
+
+.resposta {
+    max-width: 700px;
 }
 
 .container-message-dark .central-text {

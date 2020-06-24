@@ -42,6 +42,14 @@ export default {
 </script>
 
 <style>
+.pergunta {
+    cursor: pointer;
+}
+
+.resposta {
+    max-width: 700px;
+}
+
 .container-duvidas {
     width: 100%;
     min-height: 200px;
