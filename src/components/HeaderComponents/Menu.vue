@@ -50,7 +50,34 @@
             flat             
             >
             <v-list-item class="label-item">
-                <v-list-item-title>Quero ajudar</v-list-item-title>
+                <v-list-item-title v-on:click="show1 = !show1">Quero ajudar</v-list-item-title>
+                <ul class="lista-quero-ajudar" v-show="show1">
+                  <li>
+                    <v-btn flat text dark depressed  class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
+                    Adote um <span class="bold">Animalzinho</span>
+                    </v-btn>
+                  </li>
+                  <li>
+                    <v-btn flat text dark depressed class="options-link" to="/lartemporario">
+                    Dê um <span class="bold">lar temporário</span>
+                    </v-btn>
+                  </li>
+                  <li>
+                    <v-btn flat text dark depressed class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
+                      Faça uma <span class="bold">doação</span>
+                    </v-btn>
+                  </li>
+                  <li>
+                    <v-btn flat text dark depressed class="options-link" to="sejaumparceiro">
+                    Seja um <span class="bold">parceiro</span>
+                    </v-btn>
+                  </li>
+                  <li>
+                    <v-btn flat text dark depressed class="options-link" to="sejaumvoluntario">
+                      Seja um <span class="bold">voluntário</span>
+                    </v-btn>
+                  </li>
+                </ul>
             </v-list-item>
             <v-list-item class="label-item">
                 <v-list-item-title>
@@ -58,7 +85,7 @@
                 </v-list-item-title>
             </v-list-item>
             <v-list-item class="label-item">
-                <v-list-item-title>Prestação de contas</v-list-item-title>
+                <v-list-item-title><a href="#">Prestação de contas</a></v-list-item-title>
             </v-list-item>
             <v-list-item class="label-item">
               <v-list-item-title>
@@ -88,11 +115,28 @@ export default {
     closeMenu: function() {
       document.getElementsByClassName('v-menu__content')[0].style.display = 'none'
     }
+  },
+  data () {
+    return {
+      show1: false
+    }
   }
 }
 </script>
 
 <style>
+.lista-quero-ajudar {
+  padding: 22px 9px 22px 0!important;
+  list-style: none;
+}
+
+.lista-quero-ajudar li a, .lista-quero-ajudar li span{
+  color: #666;
+  text-transform: initial;
+  font-size: 18px;
+  padding-left: 0!important;
+}
+
 .close-menu {
   position: absolute;
   left: 40%;
@@ -167,6 +211,7 @@ div.v-menu__content > .container{
 
 .label-item {
   margin: 25px 0;
+  display: block;
 }
 
 .label-item > div {
