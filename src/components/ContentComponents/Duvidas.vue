@@ -11,10 +11,14 @@
             </v-col>
         </v-row>
         <v-row class="perguntas">
-            <p class="pergunta"><span>+</span> Qualquer pessoa pode ser voluntário?</p>
-            <p class="pergunta"><span>+</span> Quanto tempo preciso disponibilizar para o trabalho voluntário?</p>
-            <p class="pergunta"><span>+</span> Posso conhecer a instituição antes?</p>
-            <p class="pergunta"><span>+</span> É preciso ter formação profissional?</p>
+            <p class="pergunta" v-on:click="show1 = !show1"><span>+</span> Qualquer pessoa pode ser voluntário?</p>
+                <p class="resposta" v-show="show1">Sim, qualquer pessoa, basta ter disponibilidade de tempo e amor para dedicar aos animais.</p>
+            <p class="pergunta" v-on:click="show2 = !show2"><span>+</span> Quanto tempo preciso disponibilizar para o trabalho voluntário?</p>
+                <p class="resposta" v-show="show2">Aos domingos, em escala de revezemento com outros voluntários</p>
+            <p class="pergunta" v-on:click="show3 = !show3"><span>+</span> Posso conhecer a instituição antes?</p>
+                <p class="resposta" v-show="show3">Venha nos visitar aos domingos</p>
+            <p class="pergunta" v-on:click="show4 = !show4"><span>+</span> É preciso ter formação profissional?</p>
+                <p class="resposta" v-show="show4">Não, apenas vontade de ajudar.</p>
         </v-row>
         <v-btn depressed large color="secondary" class="btn-lar">Quero dar lar temporário</v-btn>
     </v-container>
@@ -27,7 +31,11 @@ export default {
   data () {
       return {
           exclamacao: '!',
-          duvidasFrequentes: 'Dúvidas Frequentes'
+          duvidasFrequentes: 'Dúvidas Frequentes',
+          show1: false,
+          show2: false,
+          show3: false,
+          show4: false
       }
   }
 };
