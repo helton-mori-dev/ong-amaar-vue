@@ -49,8 +49,8 @@
             class="list-menu"                    
             flat             
             >
-            <v-list-item class="label-item">
-                <v-list-item-title v-on:click="show1 = !show1">Quero ajudar</v-list-item-title>
+            <v-list-item class="label-item quero-ajudar-title">
+                <v-list-item-title v-on:click="show1 = !show1; toggleClassQuero()">Quero ajudar</v-list-item-title>
                 <ul class="lista-quero-ajudar" v-show="show1">
                   <li>
                     <v-btn flat text dark depressed  class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
@@ -114,6 +114,10 @@ export default {
   methods: {
     closeMenu: function() {
       document.getElementsByClassName('v-menu__content')[0].style.display = 'none'
+    },
+    toggleClassQuero: function() {
+      let titletoggle = document.querySelector('.quero-ajudar-title');
+      titletoggle.classList.toggle('quero-ajudar-title-height');
     }
   },
   data () {
@@ -125,9 +129,48 @@ export default {
 </script>
 
 <style>
+
+.quero-ajudar-title {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start!important;
+  position: relative;
+  height: 48px;
+}
+
+.quero-ajudar-title-height {
+  height: auto;
+}
+
+.quero-ajudar-title .v-list-item__title:before {
+  content: '+';
+  position: absolute;
+  top: -3px;
+  left: -8px;
+  color: darkcyan;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.quero-ajudar-title-height .v-list-item__title:before{
+  content: '-';
+}
+
+.quero-ajudar-title .v-list-item__title {
+  align-self: flex-start;
+  cursor: pointer;
+  transition: .3s all ease;
+  overflow: visible;
+}
+
+
 .lista-quero-ajudar {
   padding: 22px 9px 22px 0!important;
   list-style: none;
+}
+
+.quero-ajudar-title .lista-quero-ajudar {
+  padding: 22px 9px 0 0!important;
 }
 
 .lista-quero-ajudar li a, .lista-quero-ajudar li span{
@@ -225,7 +268,7 @@ div.v-menu__content > .container{
   transition: .3s all ease;
 }
 
-.label-item a:hover {
+.quero-ajudar-title .v-list-item__title:hover, .label-item a:hover {
   color: darkcyan;
 }
 
