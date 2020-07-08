@@ -290,6 +290,9 @@ div.v-menu__content > .container{
     justify-content: flex-start;
     flex-direction: column;
   } 
+  .menu-container .list-menu {
+    padding-left: 30px;
+  }
   .close-menu {
     top: -30px;
     right: 0;
