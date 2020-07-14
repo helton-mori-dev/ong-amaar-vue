@@ -13,6 +13,44 @@
       </v-row>
     </v-container>
 
+    <v-container class="container-message-voluntario" style="padding: 100px 0px 50px;">
+      <v-row class="text-center" no-gutters >
+        <v-col cols="12" class="message">
+          <h2 class="first-text-voluntario" style="line-height: 0">
+            {{ interrogacao }}            
+              <span class="second-text-voluntario" style="font-size: 36px">
+                {{ comoFunciona }}                
+              </span>
+          </h2>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container class="container-message-voluntario">
+      <v-row class="text-center como-funciona-voluntario">
+          <v-col cols="12" sm="3">
+            <v-img src="../assets/lar-temporario/hospede.png" height="413px" contain></v-img>
+            <h3><v-icon>mdi-cards-heart</v-icon>Resgates e Lar Temporário</h3>
+            <label class="text-funciona">Precisamos de voluntários para auxiliar nos resgates e toda manutenção do pet no lar temporário.</label>
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-img src="../assets/lar-temporario/racao.png" height="413px" contain></v-img>
+            <h3><v-icon>mdi-medical-bag</v-icon>Cirurgias e vacinas</h3>
+            <label class="text-funciona">Muitos animais vem com algum trauma físico. O volunt´rio deve ajudar com o acompanhamento para cirurgias e vacinas.</label>  
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-img src="../assets/lar-temporario/medicamentos.png" height="413px" contain></v-img>
+            <h3><v-icon>mdi-paw</v-icon>Feira de adoção</h3>
+            <label class="text-funciona">Todos os domingos realizamos a feira da Amaar, precisamos de voluntários para auxiliar na montagem da feira e na adoção dos animais.</label>  
+          </v-col>
+          <v-col cols="12" sm="3">
+            <v-img src="../assets/lar-temporario/feira.png" height="413px" contain></v-img>
+            <h3><v-icon>mdi-home</v-icon>Acompanhamento</h3>
+            <label class="text-funciona">Ap[os a adoção do animalzinho, o voluntário deve auxiliar no acompanhamento do animalzinho para ver como está sendo a sua adoção.</label>  
+          </v-col>
+      </v-row>
+    </v-container>
+
     <v-container class="container-duvidas" no-gutters>
         <v-row class="text-center" no-gutters >
             <v-col cols="12" class="message">
@@ -51,25 +89,83 @@
         show1: false,
         show2: false,
         show3: false,
-        show4: false
+        show4: false,
+        interrogacao: '?',
+        comoFunciona: 'Como funciona'
       }
     }
   }
 </script>
 
 
-<style scoped>
+<style>
+.como-funciona-voluntario h3, .como-funciona-voluntario label{
+  color: #503683;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+}
+
+.como-funciona-voluntario h3 i {
+  color: #503683!important;
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.como-funciona-voluntario .text-funciona{
+  font-weight: 300;
+  color: #333;
+  line-height: 20px;
+}
+
+@media screen and (max-width:960px){
+  .container-message .row{
+    min-height: 40px;
+  }
+
+  .como-funciona-voluntario h3, .como-funciona-voluntario label {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.container-message-voluntario {
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  min-height: 140px;
+  padding-top: 20px;
+  max-width: 1300px;
+  padding-bottom: 10px;
+}
+
 .container-message-dark {
     background: #503683;
     color: #ccc;
     max-width: none;
 }
+
 .pergunta {
     cursor: pointer;
 }
 
 .resposta {
     max-width: 700px;
+}
+
+.first-text-voluntario {
+    font-size: 122px;
+    color: #ccc;
+    font-weight: 800;
+    line-height: 11px;
+    letter-spacing: -2px;
+}
+.second-text-voluntario {
+    font-size: 46px;
+    color: #604298;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0;
 }
 
 .container-message-dark .central-text {

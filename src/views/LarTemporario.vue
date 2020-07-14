@@ -74,7 +74,7 @@
   }
 </script>
 
-<style scoped>
+<style>
 .container-message {
   flex-direction: column;
 }
