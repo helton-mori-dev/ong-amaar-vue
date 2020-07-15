@@ -29,24 +29,24 @@
     <v-container class="container-message-voluntario">
       <v-row class="text-center como-funciona-voluntario">
           <v-col cols="12" sm="3">
-            <v-img src="../assets/lar-temporario/hospede.png" height="413px" contain></v-img>
+            <v-img src="../assets/seja-voluntario/resgate.jpg" height="413px" contain></v-img>
             <h3><v-icon>mdi-cards-heart</v-icon>Resgates e Lar Temporário</h3>
             <label class="text-funciona">Precisamos de voluntários para auxiliar nos resgates e toda manutenção do pet no lar temporário.</label>
           </v-col>
           <v-col cols="12" sm="3">
-            <v-img src="../assets/lar-temporario/racao.png" height="413px" contain></v-img>
+            <v-img src="../assets/seja-voluntario/cirurgias.jpg" height="413px" contain></v-img>
             <h3><v-icon>mdi-medical-bag</v-icon>Cirurgias e vacinas</h3>
             <label class="text-funciona">Muitos animais vem com algum trauma físico. O volunt´rio deve ajudar com o acompanhamento para cirurgias e vacinas.</label>  
           </v-col>
           <v-col cols="12" sm="3">
-            <v-img src="../assets/lar-temporario/medicamentos.png" height="413px" contain></v-img>
+            <v-img src="../assets/seja-voluntario/feira.jpg" height="413px" contain></v-img>
             <h3><v-icon>mdi-paw</v-icon>Feira de adoção</h3>
             <label class="text-funciona">Todos os domingos realizamos a feira da Amaar, precisamos de voluntários para auxiliar na montagem da feira e na adoção dos animais.</label>  
           </v-col>
           <v-col cols="12" sm="3">
-            <v-img src="../assets/lar-temporario/feira.png" height="413px" contain></v-img>
+            <v-img src="../assets/seja-voluntario/acompanhamento.jpg" height="413px" contain></v-img>
             <h3><v-icon>mdi-home</v-icon>Acompanhamento</h3>
-            <label class="text-funciona">Ap[os a adoção do animalzinho, o voluntário deve auxiliar no acompanhamento do animalzinho para ver como está sendo a sua adoção.</label>  
+            <label class="text-funciona">Após a adoção do animalzinho, o voluntário deve auxiliar no acompanhamento do animalzinho para ver como está sendo a sua adoção.</label>  
           </v-col>
       </v-row>
     </v-container>
