@@ -120,13 +120,54 @@
     data() {
       return {
         firstMessage: 'Faça uma',
-        secondMessage: 'Doação'
+        secondMessage: 'Doação',
+        items: [
+          {
+            text: 'Início',
+            disabled: false,
+            href: '/',
+          },
+          {
+            text: 'Seja um voluntário',
+            disabled: false,
+            href: window.location.href,
+          },
+        ],
       }
     }
   }
 </script>
 
 <style>
+.breadcrumbs {
+  background: #503683;
+  display: table;
+  max-width: none;
+  padding: 0;
+}
+
+.breadcrumbs ul {
+  display: table;
+  width: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.breadcrumbs ul:before{
+  content: url(../assets/icone-breadcrumbs.png);
+  margin-right: 10px;
+}
+
+.breadcrumbs ul li a, .breadcrumbs ul li i.v-icon{
+  color: #c9bce2;
+  font-weight: lighter;
+}
+
+.breadcrumbs ul li:last-child a{
+  font-weight: bold;
+  color: #fff;
+}
+
 .container-banner {
   text-align: center;
   background: #503683;

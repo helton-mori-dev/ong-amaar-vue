@@ -12,6 +12,16 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <!-- Tem q componentizar o breadcrumbs -->
+    <v-container class="breadcrumbs">
+      <v-breadcrumbs :items="items">
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
+    </v-container>
+
     <TextDark />
     <v-container class="container-message" style="padding: 40px 0 80px">
       <v-row class="text-center" no-gutters >
@@ -68,13 +78,55 @@
         firstMessage: 'Dê um',
         secondMessage: 'Lar temporário',
         interrogacao: '?',
-        comoFunciona: 'Como funciona'
+        comoFunciona: 'Como funciona',
+        items: [
+        {
+          text: 'Início',
+          disabled: false,
+          href: '/',
+        },
+        {
+          text: 'Dê um lar temporário',
+          disabled: false,
+          href: window.location.href,
+        },
+      ],
       }
     }
   }
 </script>
 
 <style>
+
+.breadcrumbs {
+  background: #503683;
+  display: table;
+  max-width: none;
+  padding: 0;
+}
+
+.breadcrumbs ul {
+  display: table;
+  width: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.breadcrumbs ul:before{
+  content: url(../assets/icone-breadcrumbs.png);
+  margin-right: 10px;
+}
+
+.breadcrumbs ul li a, .breadcrumbs ul li i.v-icon{
+  color: #c9bce2;
+  font-weight: lighter;
+}
+
+.breadcrumbs ul li:last-child a{
+  font-weight: bold;
+  color: #fff;
+}
+
 .container-message {
   flex-direction: column;
 }

@@ -12,6 +12,14 @@
         </v-col>
       </v-row>
     </v-container>
+
+    <v-container class="breadcrumbs">
+      <v-breadcrumbs :items="items">
+        <template v-slot:divider>
+          <v-icon>mdi-chevron-right</v-icon>
+        </template>
+      </v-breadcrumbs>
+    </v-container>
     
     <v-container class="container-message-dark">
       <v-row>
@@ -72,13 +80,54 @@
         show1: false,
         show2: false,
         show3: false,
-        show4: false
+        show4: false,
+        items: [
+        {
+          text: 'Início',
+          disabled: false,
+          href: '/',
+        },
+        {
+          text: 'Seja um parceiro',
+          disabled: false,
+          href: window.location.href,
+        },
+      ]
       }
     }
   }
 </script>
 
-<style scoped>
+<style>
+.breadcrumbs {
+  background: #503683;
+  display: table;
+  max-width: none;
+  padding: 0;
+}
+
+.breadcrumbs ul {
+  display: table;
+  width: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.breadcrumbs ul:before{
+  content: url(../assets/icone-breadcrumbs.png);
+  margin-right: 10px;
+}
+
+.breadcrumbs ul li a, .breadcrumbs ul li i.v-icon{
+  color: #c9bce2;
+  font-weight: lighter;
+}
+
+.breadcrumbs ul li:last-child a{
+  font-weight: bold;
+  color: #fff;
+}
+
 .container-message-dark {
     background: #503683;
     color: #ccc;
