@@ -15,7 +15,7 @@
     <v-container class="container-banner">
       <v-row class="text-center row-banner" no-gutters>
         <v-col cols="12" sm="9">
-          <a href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2" target=blank>
+          <a href="https://www.vakinha.com.br/vaquinha/resgates-ong-amaar" target=blank>
             <v-img 
               src="../assets/doacao/banner-doacao-principal.png"
               center
@@ -110,7 +110,7 @@
     </v-row>
   </v-container>
 
-  <a class="btn-ajudar" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2" target="blank">Quero fazer uma doação</a>
+  <a class="btn-ajudar" href="https://www.vakinha.com.br/vaquinha/resgates-ong-amaar" target="blank">Quero fazer uma doação</a>
   </div>
 </template>
 
