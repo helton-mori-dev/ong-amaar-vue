@@ -101,7 +101,7 @@ export default {
 }
 
 .btn-lar.v-btn {
-    color: #503683;
+    color: #503683!important;
     text-transform: initial;
     font-weight: 700;
     width: auto;

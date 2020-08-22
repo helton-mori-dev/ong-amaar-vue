@@ -2,7 +2,7 @@
     <ul class="social-links">
         <li class="instagram"><a href="https://www.instagram.com/ongamaar/">Instagram<i class="fab fa-instagram"></i></a></li>
         <li class="facebook"><a href="https://www.facebook.com/ongamaar/">Facebook<i class="fab fa-facebook-f"></i></a></li>
-        <li class="whatsapp"><a href="">Whatsapp<i class="fab fa-whatsapp"></i></a></li>
+        <li class="whatsapp"><a href="/">Whatsapp<i class="fab fa-whatsapp"></i></a></li>
     </ul>
 </template>
 

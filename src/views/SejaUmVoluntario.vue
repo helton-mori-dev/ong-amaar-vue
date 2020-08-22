@@ -21,6 +21,10 @@
       </v-breadcrumbs>
     </v-container>
 
+    <v-container class="voluntarios">
+
+    </v-container>
+
     <v-container class="container-message-voluntario" style="padding: 100px 0px 50px;">
       <v-row class="text-center" no-gutters >
         <v-col cols="12" class="message">
@@ -124,6 +128,13 @@
   display: table;
   max-width: none;
   padding-top: 0;
+}
+
+.voluntarios {
+  background: #503683;
+  display: block;
+  height: 50px;
+  max-width: none;
 }
 
 .breadcrumbs ul {
@@ -271,7 +282,7 @@
 }
 
 .btn-lar.v-btn {
-    color: #503683;
+    color: #503683!important;
     text-transform: initial;
     font-weight: 700;
     width: auto;
