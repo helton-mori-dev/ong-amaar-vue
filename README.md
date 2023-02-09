@@ -1,5 +1,7 @@
 # ong-amaar-vue
 
+##Dados harcoded, ainda não tive tempo de organizar uma api
+
 ## Project setup
 ```
 yarn install
