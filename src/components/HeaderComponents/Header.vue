@@ -16,56 +16,81 @@
         </v-col>
 
         <v-col class="logo-col">
-          <a 
-            class="" 
-            href="/"
-          >
-            <img 
-              class="logo" 
-              src="../../assets/logo.png"
-              dense
-            />
+          <a class="" href="/">
+            <img class="logo" src="../../assets/logo.png" dense />
           </a>
         </v-col>
 
         <v-col class="header-buttons mt-3 d-none d-sm-none d-md-none d-md-flex">
           <div>
-            <div
-              class="quero-ajudar"
-            >Quero ajudar
+            <div class="quero-ajudar">
+              Quero ajudar
               <ul class="lista-ajudar">
                 <li>
-                  <v-btn flat text dark depressed  class="options-link" target="blank" href="https://www.instagram.com/ongamaar/">
-                  Adote um <span class="bold">Animalzinho</span>
+                  <v-btn
+                    flat
+                    text
+                    dark
+                    depressed
+                    class="options-link"
+                    target="blank"
+                    href="https://www.instagram.com/ongamaar/"
+                  >
+                    Adote um <span class="bold">Animalzinho</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn flat text dark depressed class="options-link" to="/lartemporario">
-                  Dê um <span class="bold">lar temporário</span>
+                  <v-btn
+                    flat
+                    text
+                    dark
+                    depressed
+                    class="options-link"
+                    to="/lartemporario"
+                  >
+                    Dê um <span class="bold">lar temporário</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn flat text dark depressed class="options-link" target="blank" href="https://www.vakinha.com.br/vaquinha/ajude-a-ong-amaar-ong-amaar-2">
+                  <v-btn
+                    flat
+                    text
+                    dark
+                    depressed
+                    class="options-link"
+                    target="blank"
+                    :href="links.linkTree"
+                  >
                     Faça uma <span class="bold">doação</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn flat text dark depressed class="options-link" to="sejaumparceiro">
-                  Seja um <span class="bold">parceiro</span>
+                  <v-btn
+                    flat
+                    text
+                    dark
+                    depressed
+                    class="options-link"
+                    to="sejaumparceiro"
+                  >
+                    Seja um <span class="bold">parceiro</span>
                   </v-btn>
                 </li>
                 <li>
-                  <v-btn flat text dark depressed class="options-link" to="sejaumvoluntario">
+                  <v-btn
+                    flat
+                    text
+                    dark
+                    depressed
+                    class="options-link"
+                    to="sejaumvoluntario"
+                  >
                     Seja um <span class="bold">voluntário</span>
                   </v-btn>
                 </li>
               </ul>
             </div>
-            <a 
-              class="entre-em-contato"
-              href="#contact" 
-            >Entre em contato
-            </a>
+            <a class="entre-em-contato" href="#contact">Entre em contato </a>
           </div>
         </v-col>
       </v-row>
@@ -74,34 +99,40 @@
 </template>
 
 <script>
-import Menu from './Menu';
+import Menu from "./Menu";
 
 export default {
-  name: 'Header',
+  name: "Header",
   components: {
-    Menu
+    Menu,
   },
-}
+  data() {
+    return {
+      links: {
+        linkTree: "https://linktr.ee/ONGAMAAR",
+      },
+    };
+  },
+};
 </script>
 
 <style>
-
 .header-primary {
-  position: fixed!important;
+  position: fixed !important;
 }
 
 header.header-primary.v-app-bar {
-  overflow: visible!important;
+  overflow: visible !important;
   position: relative;
   z-index: 1;
 }
 
-.header-primary > div{
-  max-width: 1300px!important;
+.header-primary > div {
+  max-width: 1300px !important;
   margin: 0 auto;
 }
 
-.header-primary > div .logo{
+.header-primary > div .logo {
   display: table;
   margin: auto;
 }
@@ -129,7 +160,7 @@ header.header-primary.v-app-bar {
 
 .header-buttons > div div.quero-ajudar {
   border-radius: 25px;
-  background: #63DED1;
+  background: #63ded1;
   position: relative;
   float: left;
   color: #503683;
@@ -137,31 +168,31 @@ header.header-primary.v-app-bar {
   font-weight: 700;
   padding: 10px 22px;
   text-align: center;
-  text-decoration: none;  
+  text-decoration: none;
   cursor: pointer;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li a{
+.header-buttons > div div.quero-ajudar .lista-ajudar li a {
   color: #503683;
   text-transform: initial;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li a span{
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span {
   letter-spacing: 0;
   font-weight: 400;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li a span:hover{
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span:hover {
   font-weight: 900;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li a span .bold{
+.header-buttons > div div.quero-ajudar .lista-ajudar li a span .bold {
   font-weight: bolder;
   padding-left: 2px;
 }
 
-.header-buttons > div div.quero-ajudar:after{
-  content: '';
+.header-buttons > div div.quero-ajudar:after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -15px;
@@ -170,7 +201,7 @@ header.header-primary.v-app-bar {
   width: 100%;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar{
+.header-buttons > div div.quero-ajudar .lista-ajudar {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -180,39 +211,39 @@ header.header-primary.v-app-bar {
   padding: 22px 9px;
   border-radius: 10px;
   z-index: 100;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
   list-style: none;
   min-width: 230px;
 }
 
 .header-buttons > div div.quero-ajudar:hover .lista-ajudar {
   display: block;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li{
+.header-buttons > div div.quero-ajudar .lista-ajudar li {
   text-align: left;
   width: 100%;
   padding: 0 0 0;
   font-weight: 500;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar li:hover a{
+.header-buttons > div div.quero-ajudar .lista-ajudar li:hover a {
   font-weight: bold;
 }
 
-.header-buttons > div div.quero-ajudar .lista-ajudar span{
+.header-buttons > div div.quero-ajudar .lista-ajudar span {
   font-weight: 700;
 }
 
-.header-buttons > div a.entre-em-contato{
-  color: #63DED1;
-  transition: .3s all ease;
+.header-buttons > div a.entre-em-contato {
+  color: #63ded1;
+  transition: 0.3s all ease;
   font-size: 16px;
   font-weight: 500;
 }
 
-.header-buttons > div a.entre-em-contato:hover{
+.header-buttons > div a.entre-em-contato:hover {
   color: #30ada0;
 }
 
@@ -230,12 +261,13 @@ header.header-primary.v-app-bar {
     float: left;
     width: auto;
   }
-  .logo-col .logo{
+  .logo-col .logo {
     padding: 5px 0 0 20px;
     max-height: 50px;
   }
-  .header-primary, .header-primary .v-toolbar__content {
-    height: 85px!important;
+  .header-primary,
+  .header-primary .v-toolbar__content {
+    height: 85px !important;
   }
 }
 </style>
