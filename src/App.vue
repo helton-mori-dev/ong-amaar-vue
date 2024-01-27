@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <Header />
-    <v-content id="top">
+    <v-main id="top">
       <router-view></router-view>
-    </v-content>
+    </v-main>
     <Footer />
   </v-app>
 </template>
@@ -20,9 +20,7 @@ export default {
     Footer,
   },
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
 };
 </script>
 

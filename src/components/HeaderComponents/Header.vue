@@ -28,7 +28,6 @@
               <ul class="lista-ajudar">
                 <li>
                   <v-btn
-                    flat
                     text
                     dark
                     depressed
@@ -41,7 +40,6 @@
                 </li>
                 <li>
                   <v-btn
-                    flat
                     text
                     dark
                     depressed
@@ -53,7 +51,6 @@
                 </li>
                 <li>
                   <v-btn
-                    flat
                     text
                     dark
                     depressed
@@ -66,7 +63,6 @@
                 </li>
                 <li>
                   <v-btn
-                    flat
                     text
                     dark
                     depressed
@@ -78,7 +74,6 @@
                 </li>
                 <li>
                   <v-btn
-                    flat
                     text
                     dark
                     depressed
