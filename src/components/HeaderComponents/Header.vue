@@ -16,7 +16,7 @@
         </v-col>
 
         <v-col class="logo-col">
-          <a class="" href="/">
+          <a class="" href="/home">
             <img class="logo" src="../../assets/logo.png" dense />
           </a>
         </v-col>
