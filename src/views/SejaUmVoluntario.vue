@@ -170,7 +170,7 @@ export default {
         {
           text: "Início",
           disabled: false,
-          href: "/home",
+          href: "/",
         },
         {
           text: "Seja um voluntário",

@@ -16,7 +16,7 @@
         </v-col>
 
         <v-col class="logo-col">
-          <a class="" href="/home">
+          <a class="" href="https://helton-mori-dev.github.io/ong-amaar-vue/">
             <img class="logo" src="../../assets/logo.png" dense />
           </a>
         </v-col>

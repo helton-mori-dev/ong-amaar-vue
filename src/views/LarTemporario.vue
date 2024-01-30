@@ -110,7 +110,7 @@ export default {
         {
           text: "Início",
           disabled: false,
-          href: "/home",
+          href: "/",
         },
         {
           text: "Dê um lar temporário",

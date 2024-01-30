@@ -9,7 +9,7 @@ export default new VueRouter({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "/home",
+      path: "/",
       name: "Home",
       component: Home,
     },
