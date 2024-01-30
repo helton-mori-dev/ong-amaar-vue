@@ -177,7 +177,7 @@ export default {
   line-height: 20px;
   height: 314px !important;
 }
-f .container-options .options-link span {
+.container-options .options-link span {
   font-weight: 900;
 }
 
@@ -202,9 +202,11 @@ f .container-options .options-link span {
 }
 
 @media screen and (max-width: 960px) {
-  .container-options .options-link {
-    width: 100%;
+  .container-options .row .v-btn.options-link {
     text-align: center;
+    height: auto !important;
+    display: table;
+    margin: auto;
   }
 
   .container-options .options-link > span {
