@@ -7,70 +7,16 @@
         depressed
         height="unset"
         max-width="225"
-        class="options-link"
         target="blank"
-        href="https://www.instagram.com/ongamaar/"
-      >
-        <v-col class="adote">
-          <div class="img-adote"></div>
-          Adote um<span> Animalzinho</span>
-        </v-col>
-      </v-btn>
-      <v-btn
-        text
-        dark
-        depressed
-        height="unset"
-        max-width="225"
         class="options-link"
-        to="/lartemporario"
+        :class="card.class"
+        v-for="card in cards"
+        :key="card.label"
+        :to="card.link"
       >
-        <v-col class="temporario">
-          <div class="img-temporario"></div>
-          <p>Dê um</p>
-          <span> Lar temporário</span>
-        </v-col>
-      </v-btn>
-      <v-btn
-        text
-        dark
-        depressed
-        height="unset"
-        max-width="225"
-        class="options-link"
-        to="/facaumadoacao"
-      >
-        <v-col class="doacao">
-          <div class="img-doacao"></div>
-          Faça uma<span> Doação</span>
-        </v-col>
-      </v-btn>
-      <v-btn
-        text
-        dark
-        depressed
-        height="unset"
-        max-width="225"
-        class="options-link"
-        to="sejaumparceiro"
-      >
-        <v-col class="parceiro">
-          <div class="img-parceiro"></div>
-          Seja um<span> parceiro</span>
-        </v-col>
-      </v-btn>
-      <v-btn
-        text
-        dark
-        depressed
-        height="unset"
-        max-width="225"
-        class="options-link"
-        to="sejaumvoluntario"
-      >
-        <v-col class="voluntario">
-          <div class="img-voluntario"></div>
-          Seja um<span> Voluntário</span>
+        <v-col class="card__block">
+          <div class="card__img"></div>
+          <div class="card__label">{{ card.label }}</div>
         </v-col>
       </v-btn>
     </v-row>
@@ -169,6 +115,42 @@
 <script>
 export default {
   name: "HomeOptions",
+  data() {
+    return {
+      cards: [
+        {
+          label: "Adote um animalzinho",
+          img: "../../assets/home/adote.png",
+          link: "https://www.instagram.com/ongamaar/",
+          class: "adote-animalzinho",
+        },
+        {
+          label: "Dê um lar temporário",
+          img: "../../assets/home/doacao.png",
+          link: "lartemporario",
+          class: "lar-temporario",
+        },
+        {
+          label: "Faça uma Doação",
+          img: "../../assets/home/parceiro.png",
+          link: "facaumadoacao",
+          class: "faca-doacao",
+        },
+        {
+          label: "Seja um parceiro",
+          img: "../../assets/home/temporario.png",
+          link: "sejaumparceiro",
+          class: "seja-parceiro",
+        },
+        {
+          label: "Seja um voluntário",
+          img: "../../assets/home/voluntario.png",
+          link: "sejaumvoluntario",
+          class: "seja-voluntario",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -185,7 +167,7 @@ export default {
   justify-content: center;
 }
 
-.container-options .options-link {
+.container-options .row .v-btn.options-link {
   text-transform: uppercase;
   color: #63ded1;
   text-decoration: none;
@@ -193,9 +175,9 @@ export default {
   padding: 15px 0 0 !important;
   display: block;
   line-height: 20px;
+  height: 314px !important;
 }
-
-.container-options .options-link span {
+f .container-options .options-link span {
   font-weight: 900;
 }
 
@@ -209,6 +191,10 @@ export default {
 
 .options-link.v-btn:before {
   display: none;
+}
+
+.card__label {
+  word-wrap: nowrap;
 }
 
 .v-ripple__container {
@@ -225,94 +211,62 @@ export default {
     display: flex;
     flex-direction: column;
   }
-
-  .adote,
-  .temporario,
-  .doacao,
-  .parceiro,
-  .voluntario {
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 960px) {
-  .container-options .options-link span {
+  .options-link span {
     display: block;
     font-weight: 900;
   }
 
-  .container-options a div {
+  a div {
     margin-bottom: 15px;
   }
 
-  .container-options a p {
-    margin-bottom: 0;
-  }
-
-  .container-options .adote {
-    padding-left: 0;
-  }
-
-  .container-options .temporario {
-    padding-left: 0;
-  }
-
-  .container-options .temporario a {
-    text-indent: 30px;
-  }
-
-  .container-options .adote .img-adote {
+  .card__img {
     display: block;
     height: 314px;
     width: 211px;
+  }
+
+  .adote-animalzinho .card__img {
     background-image: url("../../../public/home-hover/adote.png");
   }
 
-  .container-options .adote:hover .img-adote {
+  .adote-animalzinho:hover .card__img {
     background-position: 0 -314px;
   }
 
-  .container-options .temporario .img-temporario {
-    display: block;
-    height: 313px;
-    width: 220px;
+  .lar-temporario .card__img {
     background-image: url("../../../public/home-hover/temporario.png");
+    background-position: -10px 0;
   }
 
-  .container-options .temporario:hover .img-temporario {
-    background-position: 0 -313px;
+  .lar-temporario:hover .card__img {
+    background-position: -10px -313px;
   }
 
-  .container-options .doacao .img-doacao {
-    display: block;
-    height: 313px;
-    width: 220px;
+  .faca-doacao .card__img {
     background-image: url("../../../public/home-hover/doacao.png");
   }
 
-  .container-options .doacao:hover .img-doacao {
+  .faca-doacao:hover .card__img {
     background-position: 0 -314px;
   }
 
-  .container-options .parceiro .img-parceiro {
-    display: block;
-    height: 314px;
-    width: 220px;
+  .seja-parceiro .card__img {
     background-image: url("../../../public/home-hover/parceiro.png");
   }
 
-  .container-options .parceiro:hover .img-parceiro {
+  .seja-parceiro:hover .card__img {
     background-position: 0 -314px;
   }
 
-  .container-options .voluntario .img-voluntario {
-    display: block;
-    height: 314px;
-    width: 220px;
+  .seja-voluntario .card__img {
     background-image: url("../../../public/home-hover/voluntario.png");
   }
 
-  .container-options .voluntario:hover .img-voluntario {
+  .seja-voluntario:hover .card__img {
     background-position: 0 -314px;
   }
 }
