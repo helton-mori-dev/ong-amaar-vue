@@ -31,7 +31,7 @@
                     text
                     dark
                     depressed
-                    class="options-link"
+                    class="options-link-header"
                     target="blank"
                     href="https://www.instagram.com/ongamaar/"
                   >
@@ -43,7 +43,7 @@
                     text
                     dark
                     depressed
-                    class="options-link"
+                    class="options-link-header"
                     to="/lartemporario"
                   >
                     Dê um <span class="bold">lar temporário</span>
@@ -54,7 +54,7 @@
                     text
                     dark
                     depressed
-                    class="options-link"
+                    class="options-link-header"
                     target="blank"
                     :href="links.linkTree"
                   >
@@ -66,7 +66,7 @@
                     text
                     dark
                     depressed
-                    class="options-link"
+                    class="options-link-header"
                     to="sejaumparceiro"
                   >
                     Seja um <span class="bold">parceiro</span>
@@ -77,7 +77,7 @@
                     text
                     dark
                     depressed
-                    class="options-link"
+                    class="options-link-header"
                     to="sejaumvoluntario"
                   >
                     Seja um <span class="bold">voluntário</span>

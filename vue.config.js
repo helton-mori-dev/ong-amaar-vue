@@ -1,4 +1,5 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: process.env.NODE_ENV === "production" ? "/ong-amaar-vue/" : "/",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/ong-amaar-vue/" : "/home",
 };
