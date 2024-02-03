@@ -236,6 +236,8 @@ header.header-primary.v-app-bar {
   transition: 0.3s all ease;
   font-size: 16px;
   font-weight: 500;
+  padding-left: 8px;
+  padding-right: 0;
 }
 
 .header-buttons > div a.entre-em-contato:hover {

@@ -175,7 +175,6 @@ export default {
   padding: 15px 0 0 !important;
   display: block;
   line-height: 20px;
-  height: 314px !important;
 }
 .container-options .options-link span {
   font-weight: 900;
