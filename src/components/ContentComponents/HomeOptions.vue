@@ -120,31 +120,26 @@ export default {
       cards: [
         {
           label: "Adote um animalzinho",
-          img: "../../assets/home/adote.png",
           link: "https://www.instagram.com/ongamaar/",
           class: "adote-animalzinho",
         },
         {
           label: "Dê um lar temporário",
-          img: "../../assets/home/doacao.png",
           link: "lartemporario",
           class: "lar-temporario",
         },
         {
           label: "Faça uma Doação",
-          img: "../../assets/home/parceiro.png",
           link: "facaumadoacao",
           class: "faca-doacao",
         },
         {
           label: "Seja um parceiro",
-          img: "../../assets/home/temporario.png",
           link: "sejaumparceiro",
           class: "seja-parceiro",
         },
         {
           label: "Seja um voluntário",
-          img: "../../assets/home/voluntario.png",
           link: "sejaumvoluntario",
           class: "seja-voluntario",
         },
